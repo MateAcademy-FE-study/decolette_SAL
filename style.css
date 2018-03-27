@@ -1,0 +1,66 @@
+:root {
+    --violet-color: #a70c5d;
+}
+
+.content-block {
+    width: 100%;
+}
+
+.service {
+    display: block;
+    max-width: 400px;
+}
+
+.service__list li {
+    list-style-image: url('img/li_icon.png');
+    margin-left: -25px;
+}
+
+
+.service__info {
+    display: inline-block;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--violet-color);
+    text-align: center;
+    font: 28 Arial, sans-serif;
+    margin-top: -5px;
+  }
+/* TODO add hover for whole service! */
+  .service__info:hover {
+      color: white;
+      background-color: var(--violet-color);
+  }
+
+  .service__title {
+      display: inline-block;
+      font-weight: 700;
+      width: 270px;
+  }
+
+
+
+  .service__logo {
+      display: inline-block;
+      margin-right: 30px;
+      max-width: 25px;
+      max-height: 25px;
+  }
+
+  .service__logo img {
+      max-width:100%;
+      max-height:100%;
+  }
+
+  .service__details {
+      display: inline-block;
+      margin-left: 50px;
+      margin-top: -20px;
+  }
+
+.details__top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
