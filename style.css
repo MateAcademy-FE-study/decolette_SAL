@@ -1,0 +1,121 @@
+.content{
+	width: 1280px;
+	margin:auto;
+}
+.list__element{
+	display: inline;
+}
+.welcomeline{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: 100px;
+	position: absolute;
+	margin-top: 50px;
+}
+.list{
+	margin-left: 470px;
+	font-family:"times new roman";
+	font-size: 15px;
+	color: rgb(63, 65, 71);
+}
+.list__element{
+	margin-right: 30px;
+}
+.list__element:hover{
+	color: rgb(167, 12, 93);
+	transition: 1s;
+}
+.language{
+	border-radius: 15px;
+	height: 25px;
+	margin-top: 10px;
+	margin-left: 100px;
+	color: rgb(167, 12, 93);
+}
+.welcome{
+	background-image: url("img/dude.jpg");
+	width: 1280px;
+	height: 670px;
+	background-repeat: no-repeat;
+}
+.vertical{
+	display: flex;
+	flex-direction: column;
+	width: 380px;
+	margin-left: 100px;
+}
+.title{
+	font-family:"times new roman";
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 175px;
+}
+.title::after{
+	content:"";
+	display: block;
+	width: 30px;
+	height: 2px;
+	background-color: rgb(167, 12, 93);
+	margin-top: 30px;
+}
+
+.text{
+	font-family:"times new roman";
+	font-size: 15px;
+	line-height: 24px;
+}
+.downloadinfo{
+	font-size: 14px;
+	font-weight: bold;
+	font-family:"times new roman";
+	color: white;
+	width: 150px;
+	height: 0px;
+	background-color: rgb(129, 10, 71);
+	border-radius: 35px;
+	text-align: center;
+	vertical-align: middle;
+	padding-bottom: 60px;
+	margin-top: 20px;
+}
+
+.downloadinfo__img{
+	background-image: url("img/dlyauslugiiceny.png");
+	width: 25px;
+	height: 25px;
+	background-repeat: no-repeat;
+	display: block;
+	position: relative;
+	top:20px;
+	left:7px;
+}
+.texts{
+	text-align: center;
+	margin-top:50px;
+	width:480px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.newtitle{
+	font-family: "times new roman";
+	line-height: 30px;
+	font-size: 28px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.newtitle::after{
+	content:"";
+	display: block;
+	width: 30px;
+	height: 2px;
+	background-color: rgb(167, 12, 93);
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.texts__paragraph{
+	font-family: "times new roman";
+	line-height: 20px;
+	font-size: 15px;
+}
