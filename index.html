@@ -6,82 +6,81 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Doecollete</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 </head>
 <body>
     <!-- Aleksey's block -->
     <!-- Sergey's block-->
     <main><!-- Lyuda's block -->
-   	    <div>
-	    	<h3>запрос на услуги</h3>
+   	    <div class="headline">
+	    	<h3 class="headline__text">запрос на услуги</h3>
 	    	<div class="line"></div>
 	    </div>
-	    <form>
-	    	<input type="text" name="name" placeholder="ИМЯ*" required="">
-	    	<input type="tel" name="tel" placeholder="ТЕДЕФОН*" required="">
-	    	<input type="email" name="email" placeholder="E-MAIL*" required="">
-	    	<input type="url" name="site" placeholder="САЙТ">
-	    	<div>
-	    		<p>дополнительная информация</p>
-	    		<input type="text" name="addinf" placeholder="Введите текст.." size="30">
+	    <form class="request">
+	    	<div class="request__client">
+		    	<div class= "request__inf client" >
+		    		<div class="client__inf">
+				    	<input type="text" name="name" placeholder="ИМЯ*" required class="client__item">
+				    	<input type="tel" name="tel" placeholder="ТЕЛЕФОН*" required class="client__item">
+				    	<input type="email" name="email" placeholder="E-MAIL*" required class="client__item">
+				    	<input type="url" name="site" placeholder="САЙТ" class="client__item">
+			    	
+				    	<div class="client__select select">
+				    		
+				    			<div class="select__arrow arrow">
+				    				<div class="arrow__up"></div>
+				    				<div class="arrow__down"></div>
+				    			</div>
+				    		
+				    		<select  size="1" name="interes" class="select__menu">
+				    			<option class="select_title">Меня интересует</option>
+				    			<option>
+				    					<div class="select__text">Наведение порядка в делах</div>	
+				    			</option>
+				    			<option>
+				    					<div class="select__text">Правовое сопровождение деятельности</div>
+				    			</option>
+				    			<option>
+				     					<div class="select__text">Оптимизация договорніх отношений</div>
+				    			</option>
+				    			<option>
+				      					<div class="select__text">Разработка договоров</div>
+				    			</option>
+				    		</select>
+				    	</div>
+				    </div>
+			    </div>
+		    	<div class="request__add-inf add-inf" >
+		    		<p>дополнительная информация</p>
+		    		<textarea class="add-inf__textarea" name="addinf" placeholder="Введите текст.." ></textarea> 
+		    	</div>
 	    	</div>
-	    	<div>
-	    		<div>
-	    			<p>Меня интересует</p>
-	    			<div>
-	    				<div class="arrow"></div>
-	    			</div>
-	    		</div>
-	    		<ul class="checkbox">
-	    			<li>
-	    				<label>
-	    					<input type="checkbox" name="" class="checkbox__item">
-	    					<div class="checkbox__text">Наведение порядка в делах</div>
-	    				</label>
-	    			</li>
-	    			<li>
-	    				<label>
-	    					<input type="checkbox" name="" class="checkbox__item">
-	    					<div class="checkbox__text">Правовое сопровождение деятельности</div>
-	    				</label>
-	    			</li>
-	    			<li>
-	    				<label>
-	    					<input type="checkbox" name="" class="checkbox__item">
-	    					<div class="checkbox__text">Оптимизация договорніх отношений</div>
-	    				</label>
-	    			</li>
-	    			<li>
-	    				<label>
-	    					<input type="checkbox" name="" class="checkbox__item">
-	    					<div class="checkbox__text">Разработка договоров</div>
-	    				</label>
-	    			</li>
-	    		</ul>
-	    	</div>
-	    	<div class="button">
-	    		<button type="submit">ОТПРАВИТЬ</button>
+	    		<button type="submit" class="request__button button">ОТПРАВИТЬ</
 	    	</div>
 	    </form>
     </main>
     <footer class="footer">
-    	<section class="contacts">
+    	<div class="contacts">
     		<h3>PRAVO AGENCY</h3>
     		<p>
-    			01001, Киев, ул. Костёльная 9, оф.8<br>+380(67)324 10 10<br><span class="email">hello@pravo.agency</span>
+    			01001, Киев, ул. Костёльная 9, оф.8<br>
+    			<a href="tel:+3 80(67)324 10 10" class="tel">+3 80(67)324 10 10</a><br>
+    			<a href="mailto:hello@pravo.agency" class="mail">hello@pravo.agency</a>
     		</p>
     	
     		<div class="social">
     			<div class="social__network">
-    				<a href="#" class="social__link">f</a>
-    			</div>
+    				
+<!--     				<span class="fab fa-facebook-f"></span>
+ -->    			</div>
     			<div class="social__network">
     				<a href="#" class="social__link"><img src="img/bird.png"></a>
     			</div>
     			<div class="social__network">
-    				<a href="#"class="social__link">in</a>
+    				<a href="#" class="social__link">in</a>
     			</div>
     		</div>
-    	</section>
+    	</div>
     	<div>
     		<p>2015, Pravo agency</p>  <!--© -->
     	</div>

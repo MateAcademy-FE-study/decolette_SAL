@@ -1,9 +1,121 @@
-.checkbox {
-	list-style-type: none;
+* {
+	font-family: GothamPro, Arial, sans-serif;
+}
+.headline {
+	width: 100%;
+}
+.headline__text {
+	text-align: center;
+	text-transform: uppercase; 
+	position: relative;
+	font-size: 28px;
+	font-weight: bold;
+}
+.headline__text:after {
+	content: "___";
+	position: absolute;
+	color: #c4045f;
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.request {
+	width: 800px;
+	margin: 0 auto;
+	padding-bottom: 80px;
+}
+.request__client {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.request__inf {
+	width: 380px;
+	padding-bottom: 160px;
+	position: relative;
+}
+.client__inf {
+	display: flex;
+	flex-flow: column;
+}
+.request__add-inf {
+	width: 380px;
+}
+.client__item {
+	height: 50px;
+	 outline: none;
+	 border-width: 0 0 1px 0;
+	 padding-bottom: 0px;
+}
+.client__select {
+	margin-top: 50px;
+}
+.select {
+
+}
+.select__menu {
+	outline: none;
+}
+.select_title {
+	position: relative;
+	outline: none;
+	background-color: #fcfcfd;
+}
+.select__text {
+
+}
+.select__arrow {
+	position: absolute;
+	right: 20px;
+
+}
+.arrow {
+	width: 20px;
+	height: 20px;
+	box-sizing: border-box;
+	border: 1px solid #cacbd0;
+	border-radius: 10px;
+	
+}
+.add-inf {
+	width: 380px;
+}
+.add-inf__textarea {
+
+	width: 380px;
+	height: 250px;
+}
+.request__button {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.button {
+	height: 48px;
+	width: 178px;
+	color: white;
+	border: 1px solid #c4045f;
+	border-radius: 25px;
+	background-color: #c4045f;
+}
+.footer {
+	text-align: center;
+	color: #3c3f45;
+}
+.social {
+	display: flex;
+	justify-content: center;
 }
 .social__network{
 	width: 40px;
 	height: 40px;
 	border: 2px solid #c5c5c5;
-	border-radius: 20px;
+	border-radius: 50%;
+}
+.tel {
+	color: #3c3f45;
+	text-decoration: none;
+}
+.mail {
+	color: #c4045f;
 }
