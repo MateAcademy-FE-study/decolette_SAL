@@ -410,6 +410,14 @@ body {
 	height: 40px;
 	border: 2px solid #c5c5c5;
 	border-radius: 50%;
+	position: relative;
+}
+.social__link {
+	position: absolute;
+	top: 8px;
+	left: 10px;
+	color: #c5c5c5;
+}
 }
 .tel {
 	color: #3c3f45;
