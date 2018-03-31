@@ -7,9 +7,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Doecollete</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <section class="content">
+        <div class="welcomeline">
+            <img class="logo" src="img/logo.svg">
+            <ul class="list">
+                <li class="list__element">услуги и цены</li>
+                <li class="list__element">отзывы</li>
+                <li class="list__element">контакты</li>
+            </ul>
+            <select size="1" class="language">
+                <option>UA</option>
+                <option>HEB</option>
+                <option>DEU</option>
+                <option>ENG</option>
+            </select>
+        </div>
+
+        <header class="welcome">
+
+            <div class="vertical">
+                <h1 class="title">Правовое сопровождение малого ИТ-бизнеса</h1>
+
+                <p class="text">Зачастую интернет-проекты, разработчики, маркетологи, дизайнеры, стартаперы и другие IT-специалисты не уделяют
+                    должного внимания правовым аспектам своей деятельности.</p>
+                <p class="text">Но
+                    <b>документы должны быть в порядке</b>, и мы в этом поможем.</p>
+
+                <div class="downloadinfo">
+                    <span class="downloadinfo__img"></span>услуги и цены</div>
+
+
+            </div>
+
+            <div class="play"></div>
+
+        </header>
+
+        <section class="texts">
+            <h2 class="newtitle">услуги и цены </h2>
+
+            <p class="texts__paragraph">
+                <b>Pravo agency </b>выполняет роль юристов-аутсорсеров, надежно прикрывая правовой тыл вашей деятельности.</p>
+        </section>
+    </section>
+
     <!-- Aleksey's block -->
     <!-- Sergey's block-->
     <!-- TODO add transform uppercase -->
@@ -154,6 +199,80 @@
             <img src="img/load_more.png"> ЗАГРУЗИТЬ ЕЩЕ</div>
     </section>
     <!-- Lyuda's block -->
+    <main><!-- Lyuda's block -->
+   	    <div class="headline">
+	    	<h3 class="headline__text">запрос на услуги</h3>
+	    	<div class="line"></div>
+	    </div>
+	    <form class="request">
+	    	<div class="request__client">
+		    	<div class= "request__inf client" >
+		    		<div class="client__inf">
+				    	<input type="text" name="name" placeholder="ИМЯ*" required class="client__item">
+				    	<input type="tel" name="tel" placeholder="ТЕЛЕФОН*" required class="client__item">
+				    	<input type="email" name="email" placeholder="E-MAIL*" required class="client__item">
+				    	<input type="url" name="site" placeholder="САЙТ" class="client__item">
+			    	
+				    	<div class="client__select select">
+				    		
+				    			<div class="select__arrow arrow">
+				    				<div class="arrow__up"></div>
+				    				<div class="arrow__down"></div>
+				    			</div>
+				    		
+				    		<select  size="1" name="interes" class="select__menu">
+				    			<option class="select_title">Меня интересует</option>
+				    			<option>
+				    					<div class="select__text">Наведение порядка в делах</div>	
+				    			</option>
+				    			<option>
+				    					<div class="select__text">Правовое сопровождение деятельности</div>
+				    			</option>
+				    			<option>
+				     					<div class="select__text">Оптимизация договорніх отношений</div>
+				    			</option>
+				    			<option>
+				      					<div class="select__text">Разработка договоров</div>
+				    			</option>
+				    		</select>
+				    	</div>
+				    </div>
+			    </div>
+		    	<div class="request__add-inf add-inf" >
+		    		<p>дополнительная информация</p>
+		    		<textarea class="add-inf__textarea" name="addinf" placeholder="Введите текст.." ></textarea> 
+		    	</div>
+	    	</div>
+	    		<button type="submit" class="request__button button">ОТПРАВИТЬ</
+	    	</div>
+	    </form>
+    </main>
+    <footer class="footer">
+    	<div class="contacts">
+    		<h3>PRAVO AGENCY</h3>
+    		<p>
+    			01001, Киев, ул. Костёльная 9, оф.8<br>
+    			<a href="tel:+3 80(67)324 10 10" class="tel">+3 80(67)324 10 10</a><br>
+    			<a href="mailto:hello@pravo.agency" class="mail">hello@pravo.agency</a>
+    		</p>
+    	
+    		<div class="social">
+    			<div class="social__network">
+    				<a href="# " class="social__link"><span class="fab fa-facebook-f"></span></a>
+    				
+ 	 			</div>
+    			<div class="social__network">
+    				<a href="#" class="social__link"><img src="img/bird.png"></a>
+    			</div>
+    			<div class="social__network">
+    				<a href="# " class="social__link"><span class="fab fa-linkedin-in"></span></a>
+    			</div>
+    		</div>
+    	</div>
+    	<div>
+    		<p>2015, Pravo agency</p>  <!--© -->
+    	</div>
+    </footer>
 </body>
 
 </html>
