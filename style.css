@@ -440,10 +440,14 @@ body {
   position: relative;
 }
 .social__link {
-  position: absolute;
-  top: 8px;
-  left: 10px;
-  color: #c5c5c5;
+	position: absolute;
+	top: 8px;
+	left: 10px;
+	color: #c5c5c5;
+}
+
+.social__link:hover {
+	color: #336bbc;
 }
 .tel {
   color: #3c3f45;
