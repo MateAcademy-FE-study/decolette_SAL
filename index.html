@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Doecollete</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -57,20 +58,18 @@
 
     <!-- Aleksey's block -->
     <!-- Sergey's block-->
-    <!-- TODO add transform uppercase -->
     <section class=content-block>
         <section class=services-block>
             <div class=service>
                 <div class=service__logo>
-                    <img src="img/order.png" alt="order">
+                    <img src="img/order.svg" alt="order">
                 </div>
                 <div class=service__details>
                     <div class=details__top>
-                        <div class=service__title>НАВЕДЕНИЕ ПОРЯДКА В ДЕЛАХ</div>
+                        <div class=service__title>наведение порядка в делах</div>
                         <div class=service__info>i</div>
                     </div>
-                    <!-- TODO delete inline styles -->
-                    <div style="margin-bottom: -15px;margin-top: 15px; padding-top: 10px;">Аудит документов и платежей на предмет:</div>
+                    <div class='service__description'>Аудит документов и платежей на предмет:</div>
                     <ul class="service__list">
                         <li>соблюдения необходимых формальностей и процедур</li>
                         <li>наличия всех оригиналов договоров, актов</li>
@@ -80,11 +79,11 @@
             </div>
             <div class=service>
                 <div class=service__logo>
-                    <img src="img/optimization.png" alt="optimization">
+                    <img src="img/optimization.svg" alt="optimization">
                 </div>
                 <div class=service__details>
                     <div class=details__top>
-                        <div class=service__title>ОПТИМИЗАЦИЯ ДОГОВОРНЫХ ОТНОШЕНИЙ</div>
+                        <div class=service__title>оптимизация договорных отношений</div>
                         <div class=service__info>i</div>
                     </div>
                     <ul class="service__list">
@@ -96,12 +95,12 @@
             </div>
             <div class=service>
                 <div class=service__logo>
-                    <img src="img/law.png" alt="law">
+                    <img src="img/law.svg" alt="law">
                 </div>
                 <div class=service__details>
                     <div class=details__top>
-                        <div class=service__title>ПРАВОВОЕ СОПРОВОЖДЕНИЕ
-                            <br>ДЕЯТЕЛЬНОСТИ (ЮРИСТ-АУТСОРСЕР)</div>
+                        <div class=service__title>правовое сопровождение
+                            <br>деятельности (юрист-аутсорсер)</div>
                         <div class=service__info>i</div>
                     </div>
                     <ul class="service__list">
@@ -114,15 +113,14 @@
             </div>
             <div class=service>
                 <div class=service__logo>
-                    <img src="img/court.png" alt="court">
+                    <img src="img/court.svg" alt="court">
                 </div>
                 <div class=service__details>
                     <div class=details__top>
-                        <div class=service__title>РАЗРАБОТКА ДОГОВОРОВ И ДРУГОЙ ДОКУМЕНТАЦИИ</div>
+                        <div class=service__title>разработка договоров и другой документации</div>
                         <div class=service__info>i</div>
                     </div>
                     <ul class="service__list">
-                        <!-- TODO add svg icon -->
                         <li>Участие в заключении договоров: минимизация рисков, усиление ваших позиций</li>
                         <li>Юридическая консультация</li>
                         <li>Дайджест предпринимательских ИТ-новостей с разъяснениями</li>
@@ -134,8 +132,6 @@
         <section class=feedbacks>
             <div class=feedbacks_title>
                 <span>ОТЗЫВЫ</span>
-                <!-- TODO change to after -->
-                <div class=short_line>____</div>
                 <div>Мнение наших клиентов
                     <b>делает мир и нас лучше :)</b>
                 </div>
@@ -144,8 +140,8 @@
             <div class=feedback-items>
                 <div class=feedback>
                     <div class=quote-character>“</div>
-                    <div class=quote-text>Главная тема для меня – любовь. Мы все хотим ее, но не знаем как получить, поэтому все, что мы делаем,
-                        — это всего лишь попытки найти счастье.</div>
+                    <blockquote class=quote-text cite="Алексей Федоров">Главная тема для меня – любовь. Мы все хотим ее, но не знаем как получить, поэтому все, что мы делаем,
+                        — это всего лишь попытки найти счастье.</blockquote>
                     <div class=author>
                         <div class=author__avatar>
                             <img src="img/person_1.png" alt="person">
@@ -161,8 +157,8 @@
                 </div>
                 <div class=feedback>
                     <div class=quote-character>“</div>
-                    <div class=quote-text>Главная тема для меня – любовь. Мы все хотим ее, но не знаем как получить, поэтому все, что мы делаем,
-                        — это всего лишь попытки найти счастье.</div>
+                    <blockquote class=quote-text cite='Артур Оруджалиев'>Главная тема для меня – любовь. Мы все хотим ее, но не знаем как получить, поэтому все, что мы делаем,
+                        — это всего лишь попытки найти счастье.</blockquote>
                     <div class=author>
                         <div class=author__avatar>
                             <img src="img/person_2.png" alt="person">
@@ -194,84 +190,94 @@
                 </div>
             </div>
         </section>
-        <!-- TODO add rotation -->
         <div class=loadmore>
-            <img src="img/load_more.png"> ЗАГРУЗИТЬ ЕЩЕ</div>
+            <div>
+                <img src="img/load_more.svg">
+            </div> загрузить ещё</div>
     </section>
     <!-- Lyuda's block -->
-    <main><!-- Lyuda's block -->
-   	    <div class="headline">
-	    	<h3 class="headline__text">запрос на услуги</h3>
-	    	<div class="line"></div>
-	    </div>
-	    <form class="request">
-	    	<div class="request__client">
-		    	<div class= "request__inf client" >
-		    		<div class="client__inf">
-				    	<input type="text" name="name" placeholder="ИМЯ*" required class="client__item">
-				    	<input type="tel" name="tel" placeholder="ТЕЛЕФОН*" required class="client__item">
-				    	<input type="email" name="email" placeholder="E-MAIL*" required class="client__item">
-				    	<input type="url" name="site" placeholder="САЙТ" class="client__item">
-			    	
-				    	<div class="client__select select">
-				    		
-				    			<div class="select__arrow arrow">
-				    				<div class="arrow__up"></div>
-				    				<div class="arrow__down"></div>
-				    			</div>
-				    		
-				    		<select  size="1" name="interes" class="select__menu">
-				    			<option class="select_title">Меня интересует</option>
-				    			<option>
-				    					<div class="select__text">Наведение порядка в делах</div>	
-				    			</option>
-				    			<option>
-				    					<div class="select__text">Правовое сопровождение деятельности</div>
-				    			</option>
-				    			<option>
-				     					<div class="select__text">Оптимизация договорніх отношений</div>
-				    			</option>
-				    			<option>
-				      					<div class="select__text">Разработка договоров</div>
-				    			</option>
-				    		</select>
-				    	</div>
-				    </div>
-			    </div>
-		    	<div class="request__add-inf add-inf" >
-		    		<p>дополнительная информация</p>
-		    		<textarea class="add-inf__textarea" name="addinf" placeholder="Введите текст.." ></textarea> 
-		    	</div>
-	    	</div>
-	    		<button type="submit" class="request__button button">ОТПРАВИТЬ</
-	    	</div>
-	    </form>
+    <main>
+        <!-- Lyuda's block -->
+        <div class="headline">
+            <h3 class="headline__text">запрос на услуги</h3>
+            <div class="line"></div>
+        </div>
+        <form class="request">
+            <div class="request__client">
+                <div class="request__inf client">
+                    <div class="client__inf">
+                        <input type="text" name="name" placeholder="ИМЯ*" required class="client__item">
+                        <input type="tel" name="tel" placeholder="ТЕЛЕФОН*" required class="client__item">
+                        <input type="email" name="email" placeholder="E-MAIL*" required class="client__item">
+                        <input type="url" name="site" placeholder="САЙТ" class="client__item">
+
+                        <div class="client__select select">
+
+                            <div class="select__arrow arrow">
+                                <div class="arrow__up"></div>
+                                <div class="arrow__down"></div>
+                            </div>
+
+                            <select size="1" name="interes" class="select__menu">
+                                <option class="select_title">Меня интересует</option>
+                                <option>
+                                    <div class="select__text">Наведение порядка в делах</div>
+                                </option>
+                                <option>
+                                    <div class="select__text">Правовое сопровождение деятельности</div>
+                                </option>
+                                <option>
+                                    <div class="select__text">Оптимизация договорніх отношений</div>
+                                </option>
+                                <option>
+                                    <div class="select__text">Разработка договоров</div>
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="request__add-inf add-inf">
+                    <p>дополнительная информация</p>
+                    <textarea class="add-inf__textarea" name="addinf" placeholder="Введите текст.."></textarea>
+                </div>
+            </div>
+            <button type="submit" class="request__button button">ОТПРАВИТЬ</ </div>
+        </form>
     </main>
     <footer class="footer">
-    	<div class="contacts">
-    		<h3>PRAVO AGENCY</h3>
-    		<p>
-    			01001, Киев, ул. Костёльная 9, оф.8<br>
-    			<a href="tel:+3 80(67)324 10 10" class="tel">+3 80(67)324 10 10</a><br>
-    			<a href="mailto:hello@pravo.agency" class="mail">hello@pravo.agency</a>
-    		</p>
-    	
-    		<div class="social">
-    			<div class="social__network">
-    				<a href="# " class="social__link"><span class="fab fa-facebook-f"></span></a>
-    				
- 	 			</div>
-    			<div class="social__network">
-    				<a href="#" class="social__link"><img src="img/bird.png"></a>
-    			</div>
-    			<div class="social__network">
-    				<a href="# " class="social__link"><span class="fab fa-linkedin-in"></span></a>
-    			</div>
-    		</div>
-    	</div>
-    	<div>
-    		<p>2015, Pravo agency</p>  <!--© -->
-    	</div>
+        <div class="contacts">
+            <h3>PRAVO AGENCY</h3>
+            <p>
+                01001, Киев, ул. Костёльная 9, оф.8
+                <br>
+                <a href="tel:+3 80(67)324 10 10" class="tel">+3 80(67)324 10 10</a>
+                <br>
+                <a href="mailto:hello@pravo.agency" class="mail">hello@pravo.agency</a>
+            </p>
+
+            <div class="social">
+                <div class="social__network">
+                    <a href="# " class="social__link">
+                        <span class="fab fa-facebook-f"></span>
+                    </a>
+
+                </div>
+                <div class="social__network">
+                    <a href="#" class="social__link">
+                        <img src="img/bird.png">
+                    </a>
+                </div>
+                <div class="social__network">
+                    <a href="# " class="social__link">
+                        <span class="fab fa-linkedin-in"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>2015, Pravo agency</p>
+            <!--© -->
+        </div>
     </footer>
 </body>
 
