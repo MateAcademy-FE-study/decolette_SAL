@@ -203,7 +203,7 @@
 	    	<div class="line"></div>
 	    </div>
 	    <form class="request">
-	    	<div class="request__client">
+	    	<section class="request__client">
 		    	<div class= "request__inf client" >
 		    		<div class="client__inf">
 		    			<label  class="client__item">
@@ -220,37 +220,33 @@
 			    		</label>
 				    	<div class="client__select select" >
 				    		<div class="select__arrow arrow">
-				    				<div class="arrow__up"></div>
-				    				<div class="arrow__down"></div>
-				    			</div> 
-				    		<label class="select__label">меня интересует</label> 
+				    			<div class="arrow__up"></div>
+				    			<div class="arrow__down"></div>
+				    		</div> 
+				    		
 				    		<select  size="1" name="interest" class="select__menu">
-				    			
-					     			<option value="" class="select__text"></option>
-					    			<option value="1" class="select__text">
-					    					Наведение порядка в делах	
+					    			<option value="1" > ○ Наведение порядка в делах
 					    			</option >
 					    			<option value="2">
-					    				Правовое сопровождение деятельности
+					    				○ Правовое сопровождение деятельности
 					    			</option >
 					    			<option value="3">
-					     				Оптимизация договорных отношений
+					     				○ Оптимизация договорных отношений
 					    			</option>
 					    			<option value="4">
-					      				Разработка договоров
+					      				○ Разработка договоров
 					    			</option>
 				    		</select>
 				    	</div>
-				    </div>
+				    </div> <!--class="client__inf"-->
 			    </div>
 		    	<div class="request__add-inf add-inf" >
 		    		<p>дополнительная информация</p>
 		    		<textarea class="add-inf__textarea" name="addinf" placeholder="Введите текст.." ></textarea> 
 		    	</div>
-	    	</div>
+	    	</section>
 	    		<button type="submit" class="request__button button">отправить</
-	    	</div>
-	    </form>
+	      </form>
     </main>
     <footer class="footer">
     	<div class="footer__contacts">
@@ -278,7 +274,9 @@
     </footer>
     <script>
     	$(document).ready(function(){
-    		$('select').selectric();
+    		$('select').selectric({
+    			labelBuilder: 'меня интересует'
+    		});
     	});
 	</script>
 </body>
