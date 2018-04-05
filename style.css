@@ -18,131 +18,129 @@ body {
   font-family: GothamPro;
 }
 
-
-.content{
-	width: 1280px;
-	margin:auto;
+.content {
+  width: 1280px;
+  margin: auto;
 }
 
-.list__element{
-	display: inline;
+.list__element {
+  display: inline;
 }
 
-.welcomeline{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-left: 100px;
-	position: absolute;
-	margin-top: 50px;
+.welcomeline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 100px;
+  position: absolute;
+  margin-top: 50px;
 }
-.list{
-	margin-left: 470px;
-	font-family:"times new roman";
-	font-size: 15px;
-	color: rgb(63, 65, 71);
+.list {
+  margin-left: 470px;
+  font-family: GothamPro;
+  font-size: 15px;
+  color: rgb(63, 65, 71);
 }
-.list__element{
-	margin-right: 30px;
+.list__element {
+  margin-right: 30px;
 }
-.list__element:hover{
-	color: rgb(167, 12, 93);
-	transition: 1s;
+.list__element:hover {
+  color: rgb(167, 12, 93);
+  transition: 1s;
 }
-.language{
-	border-radius: 15px;
-	height: 25px;
-	margin-top: 10px;
-	margin-left: 100px;
-	color: rgb(167, 12, 93);
+.language {
+  border-radius: 15px;
+  height: 25px;
+  margin-top: 10px;
+  margin-left: 100px;
+  color: rgb(167, 12, 93);
 }
-.welcome{
-	background-image: url("img/dude.jpg");
-	width: 1280px;
-	height: 670px;
-	background-repeat: no-repeat;
+.welcome {
+  background-image: url("img/dude.jpg");
+  width: 1280px;
+  height: 670px;
+  background-repeat: no-repeat;
 }
-.vertical{
-	display: flex;
-	flex-direction: column;
-	width: 380px;
-	margin-left: 100px;
+.vertical {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  margin-left: 100px;
 }
-.title{
-	font-family:"times new roman";
-	font-size: 30px;
-	font-weight: bold;
-	margin-top: 175px;
+.title {
+  font-family: GothamPro;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 175px;
 }
-.title::after{
-	content:"";
-	display: block;
-	width: 30px;
-	height: 2px;
-	background-color: rgb(167, 12, 93);
-	margin-top: 30px;
-}
-
-.text{
-	font-family:"times new roman";
-	font-size: 15px;
-	line-height: 24px;
-}
-.downloadinfo{
-	font-size: 14px;
-	font-weight: bold;
-	font-family:"times new roman";
-	color: white;
-	width: 150px;
-	height: 0px;
-	background-color: rgb(129, 10, 71);
-	border-radius: 35px;
-	text-align: center;
-	vertical-align: middle;
-	padding-bottom: 60px;
-	margin-top: 20px;
+.title::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: rgb(167, 12, 93);
+  margin-top: 30px;
 }
 
-.downloadinfo__img{
-	background-image: url("img/dlyauslugiiceny.png");
-	width: 25px;
-	height: 25px;
-	background-repeat: no-repeat;
-	display: block;
-	position: relative;
-	top:20px;
-	left:7px;
+.text {
+  font-family: GothamPro;
+  font-size: 15px;
+  line-height: 24px;
 }
-.texts{
-	text-align: center;
-	margin-top:50px;
-	width:480px;
-	margin-left: auto;
-	margin-right: auto;
-}
-.newtitle{
-	font-family: "times new roman";
-	line-height: 30px;
-	font-size: 28px;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-.newtitle::after{
-	content:"";
-	display: block;
-	width: 30px;
-	height: 2px;
-	background-color: rgb(167, 12, 93);
-	margin-top: 30px;
-	margin-left: auto;
-	margin-right: auto;
-}
-.texts__paragraph{
-	font-family: "times new roman";
-	line-height: 20px;
-	font-size: 15px;
+.downloadinfo {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: GothamPro;
+  color: white;
+  width: 150px;
+  height: 0px;
+  background-color: rgb(129, 10, 71);
+  border-radius: 35px;
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 60px;
+  margin-top: 20px;
 }
 
+.downloadinfo__img {
+  background-image: url("img/dlyauslugiiceny.png");
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  display: block;
+  position: relative;
+  top: 20px;
+  left: 7px;
+}
+.texts {
+  text-align: center;
+  margin-top: 50px;
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.newtitle {
+  font-family: GothamPro;
+  line-height: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.newtitle::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: rgb(167, 12, 93);
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.texts__paragraph {
+  font-family: GothamPro;
+  line-height: 20px;
+  font-size: 15px;
+}
 
 .content-block {
   width: 100%;
@@ -171,6 +169,7 @@ body {
 
 .service__info {
   display: inline-block;
+  font-family: "Times New Roman", Times, serif;
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -192,16 +191,23 @@ body {
   width: 400px;
   font-size: 13px;
   line-height: 15px;
+  text-transform: uppercase;
+}
+
+.service__description {
+  margin-bottom: -15px;
+  margin-top: 15px;
+  padding-top: 10px;
 }
 
 .service__logo {
   display: inline-block;
   margin-right: 30px;
-  max-width: 25px;
-  max-height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
-.service__logo img {
+.service__logo > img {
   max-width: 100%;
   max-height: 100%;
 }
@@ -231,6 +237,15 @@ body {
   align-items: center;
   padding-top: 20px;
   margin-bottom: 70px;
+}
+
+.feedbacks_title > span:after {
+  display: block;
+  content: "";
+  border-bottom: var(--violet-color) 2px solid;
+  height: 5px;
+  width: 30px;
+  margin: 0 auto;
 }
 
 .quote-character {
@@ -282,10 +297,27 @@ body {
   font-family: GothamProBold;
   font-size: 15px;
   vertical-align: middle;
+  text-transform: uppercase;
 }
 
-.loadmore > img {
+.loadmore > div {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+}
+
+.loadmore > div > img {
+  display: inline-block;
   vertical-align: middle;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+}
+
+.loadmore > div > img:hover {
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .feedbacks_title > span {
@@ -301,41 +333,41 @@ body {
   line-height: 30px;
 }
 .headline {
-	width: 100%;
+  width: 100%;
 }
 .headline__text {
-	text-align: center;
-	text-transform: uppercase; 
-	position: relative;
-	font-size: 28px;
-	font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 28px;
+  font-weight: bold;
 }
 .headline__text:after {
-	content: "___";
-	position: absolute;
-	color: #c4045f;
-	bottom: -20px;
-	left: 50%;
-	transform: translateX(-50%);
+  content: "___";
+  position: absolute;
+  color: #c4045f;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .request {
-	width: 800px;
-	margin: 0 auto;
-	padding-bottom: 80px;
+  width: 800px;
+  margin: 0 auto;
+  padding-bottom: 80px;
 }
 .request__client {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .request__inf {
-	width: 380px;
-	padding-bottom: 160px;
-	position: relative;
+  width: 380px;
+  padding-bottom: 160px;
+  position: relative;
 }
 .client__inf {
-	display: flex;
-	flex-flow: column;
+  display: flex;
+  flex-flow: column;
 }
 .request__add-inf {
 	width: 380px;
@@ -370,7 +402,7 @@ body {
 	font-weight: medium;
 }
 .client__select {
-	margin-top: 50px;
+  margin-top: 50px;
 }
 .select {
 	position: relative;
@@ -444,11 +476,12 @@ body {
 	height: 250px;
 }
 .request__button {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .button {
+
 	height: 48px;
 	width: 178px;
 	color: white;
@@ -462,9 +495,10 @@ body {
 	opacity: 0.5;
 }
 .footer {
-	text-align: center;
-	color: #3c3f45;
+  text-align: center;
+  color: #3c3f45;
 }
+
 .footer__contacts > h3 {
 	text-transform: uppercase;
 }
@@ -482,6 +516,7 @@ body {
 	border-radius: 50%;
 	text-align: center;
 	box-sizing: border-box;
+
 }
 .footer__link {
 	line-height: 36px;
@@ -491,6 +526,7 @@ body {
 	border-color: #336bbc;
 	color: #336bbc;
 }
+<<<<<<< HEAD
 .footer__tel {
 	color: #3c3f45;
 	text-decoration: none;
@@ -507,3 +543,12 @@ body {
 .footer__lastline:before {
 	content: "©";
 }
+=======
+.tel {
+  color: #3c3f45;
+  text-decoration: none;
+}
+.mail {
+  color: #c4045f;
+}
+>>>>>>> fafb1c5c9d75e3142d10fdfc40649f67868b9585
