@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Doecollete</title>
+    <title>Docollete</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
-        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	 <script src="jquery.selectric.min.js"></script> 
+    <link rel="stylesheet" href="selectric.css">
+
 </head>
 
 <body>
@@ -216,80 +219,88 @@
             </div> загрузить ещё</div>
     </section>
     <!-- Lyuda's block -->
-    <main>
-        <!-- Lyuda's block -->
-        <div class="headline">
-            <h3 class="headline__text">запрос на услуги</h3>
-            <div class="line"></div>
-        </div>
-        <form class="request">
-            <div class="request__client">
-                <div class="request__inf client">
-                    <div class="client__inf">
-                        <input type="text" name="name" placeholder="ИМЯ*" required class="client__item">
-                        <input type="tel" name="tel" placeholder="ТЕЛЕФОН*" required class="client__item">
-                        <input type="email" name="email" placeholder="E-MAIL*" required class="client__item">
-                        <input type="url" name="site" placeholder="САЙТ" class="client__item">
-
-                        <div class="client__select select">
-
-                            <div class="select__arrow arrow">
-                                <div class="arrow__up"></div>
-                                <div class="arrow__down"></div>
-                            </div>
-
-                            <select size="1" name="interes" class="select__menu">
-                                <option class="select_title">Меня интересует</option>
-                                <option>
-                                    <div class="select__text">Наведение порядка в делах</div>
-                                </option>
-                                <option>
-                                    <div class="select__text">Правовое сопровождение деятельности</div>
-                                </option>
-                                <option>
-                                    <div class="select__text">Оптимизация договорніх отношений</div>
-                                </option>
-                                <option>
-                                    <div class="select__text">Разработка договоров</div>
-                                </option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="request__add-inf add-inf">
-                    <p>дополнительная информация</p>
-                    <textarea class="add-inf__textarea" name="addinf" placeholder="Введите текст.."></textarea>
-                </div>
-            </div>
-            <button type="submit" class="request__button button">ОТПРАВИТЬ</ </div>
-        </form>
+    <main><!-- Lyuda's block -->
+   	    <div class="headline">
+	    	<h3 class="headline__text">запрос на услуги</h3>
+	    	<div class="line"></div>
+	    </div>
+	    <form class="request">
+	    	<section class="request__client">
+		    	<div class= "request__inf client" >
+		    		<div class="client__inf">
+		    			<label  class="client__item">
+				    		<input type="text" name="name" placeholder="ИМЯ*" required >
+				    	</label>
+				    	<label  class="client__item">	
+				    		<input type="tel" name="tel" placeholder="ТЕЛЕФОН*" required >
+				    	</label>
+				    	<label  class="client__item">
+				    		<input type="email" name="email" placeholder="E-MAIL*" required>
+				    	</label>
+				    	<label  class="client__item">
+				    		<input type="url" name="site" placeholder="САЙТ" >
+			    		</label>
+				    	<div class="client__select select" >
+				    		<div class="select__arrow arrow">
+				    			<div class="arrow__up"></div>
+				    			<div class="arrow__down"></div>
+				    		</div> 
+				    		
+				    		<select  size="1" name="interest" class="select__menu">
+					    			<option value="1" > ○ Наведение порядка в делах
+					    			</option >
+					    			<option value="2">
+					    				○ Правовое сопровождение деятельности
+					    			</option >
+					    			<option value="3">
+					     				○ Оптимизация договорных отношений
+					    			</option>
+					    			<option value="4">
+					      				○ Разработка договоров
+					    			</option>
+				    		</select>
+				    	</div>
+				    </div> <!--class="client__inf"-->
+			    </div>
+		    	<div class="request__add-inf add-inf" >
+		    		<p>дополнительная информация</p>
+		    		<textarea class="add-inf__textarea" name="addinf" placeholder="Введите текст.." ></textarea> 
+		    	</div>
+	    	</section>
+	    		<button type="submit" class="request__button button">отправить</
+	      </form>
     </main>
     <footer class="footer">
-    	<div class="contacts">
-    		<h3>PRAVO AGENCY</h3>
+    	<div class="footer__contacts">
+    		<h3>pravo agency</h3>
     		<p>
     			01001, Киев, ул. Костёльная 9, оф.8<br>
-    			<a href="tel:+3 80(67)324 10 10" class="tel">+3 80(67)324 10 10</a><br>
-    			<a href="mailto:hello@pravo.agency" class="mail">hello@pravo.agency</a>
+    			<a href="tel:+3 80(67)324 10 10" class="footer__tel">+3 80(67)324 10 10</a><br>
+    			<a href="mailto:hello@pravo.agency" class="footer__mail">hello@pravo.agency</a>
     		</p>
-    	
-    		<div class="social">
-    			<div class="social__network">
-    				<a href="# " class="social__link"><span class="fab fa-facebook-f"></span></a>
-    				
- 	 			</div>
-    			<div class="social__network">
-    				<a href="#" class="social__link"><span class="fab fa-twitter"></span>  </a>
-    			</div>
-    			<div class="social__network">
-    				<a href="# " class="social__link"><span class="fab fa-linkedin-in"></span></a>
-    			</div>
+    		<div class="footer__social ">
+   				<a href="# " class="footer__link">
+    				<div class="footer__network">
+    					<span class="fab fa-facebook-f"></span></div></a>
+   				<a href="#" class="footer__link">
+   					<div class="footer__network">
+   						<span class="fab fa-twitter"></span>
+   					</div>
+   				</a>    			
+    			<a href="# " class="footer__link">
+    				<div class="footer__network">
+    					<span class="fab fa-linkedin-in"></span></div></a>
     		</div>
     	</div>
-    	<div>
-    		<p>2015, Pravo agency</p>  <!--© -->
-    	</div>
+    	<p class="footer__lastline">2015, <span>Pravo agency</span></p>  <!--© --> 	
     </footer>
+    <script>
+    	$(document).ready(function(){
+    		$('.select__menu').selectric({
+    			labelBuilder: 'меня интересует'
+    		});
+    	});
+	</script>
 </body>
 
 </html>
