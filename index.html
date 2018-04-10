@@ -65,7 +65,7 @@
         <section class=services-block>
             <div class=service>
                 <div class=service__logo>
-                    <img src="img/order.svg" alt="order">
+                    <img class=service__logo_svg src="img/order.svg" alt="order">
                 </div>
                 <div class=service__details>
                     <div class=details__top>
@@ -82,7 +82,7 @@
             </div>
             <div class=service>
                 <div class=service__logo>
-                    <img src="img/optimization.svg" alt="optimization">
+                    <img class=service__logo_svg src="img/optimization.svg" alt="optimization">
                 </div>
                 <div class=service__details>
                     <div class=details__top>
@@ -98,7 +98,7 @@
             </div>
             <div class=service>
                 <div class=service__logo>
-                    <img src="img/law.svg" alt="law">
+                    <img class=service__logo_svg src="img/law.svg" alt="law">
                 </div>
                 <div class=service__details>
                     <div class=details__top>
@@ -116,7 +116,7 @@
             </div>
             <div class=service>
                 <div class=service__logo>
-                    <img src="img/court.svg" alt="court">
+                    <img  class=service__logo_svg src="img/court.svg" alt="court">
                 </div>
                 <div class=service__details>
                     <div class=details__top>
@@ -280,6 +280,25 @@
     			labelBuilder: 'меня интересует'
     		});
     	});
+
+        // Tatsiak's scripts are bellow.
+        const services = document.querySelectorAll('.service');
+        services.forEach(service => service.addEventListener('mouseover', ()=>{
+            const infoIcon = service.querySelector('.service__info');
+            const svgLogo = service.querySelector(".service__logo_svg");
+            infoIcon.classList.add('service__info_hover');
+            const path_to_svg = svgLogo.getAttribute('src');
+            if (path_to_svg.includes('_violet.svg')) return;
+            svgLogo.setAttribute('src', path_to_svg.slice(0,-4) + '_violet.svg')
+        }))
+        services.forEach(service => service.addEventListener('mouseout', ()=>{
+            const infoIcon = service.querySelector('.service__info');
+            const svgLogo = service.querySelector(".service__logo_svg");
+            infoIcon.classList.remove('service__info_hover');
+            const path_to_svg = svgLogo.getAttribute('src');
+            if (!path_to_svg.includes('_violet.svg')) return;
+            svgLogo.setAttribute('src', path_to_svg.slice(0,-11) + '.svg')
+        }))
 	</script>
 </body>
 
