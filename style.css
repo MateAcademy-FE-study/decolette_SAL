@@ -481,7 +481,6 @@ body {
   transform: translateX(-50%);
 }
 .button {
-
 	height: 48px;
 	width: 178px;
 	color: white;
@@ -516,6 +515,7 @@ body {
 	border-radius: 50%;
 	text-align: center;
 	box-sizing: border-box;
+	margin:3px;
 
 }
 .footer__link {
@@ -542,12 +542,4 @@ body {
 .footer__lastline:before {
 	content: "©";
 }
-=======
-.tel {
-  color: #3c3f45;
-  text-decoration: none;
-}
-.mail {
-  color: #c4045f;
-}
->>>>>>> fafb1c5c9d75e3142d10fdfc40649f67868b9585
+
