@@ -202,7 +202,7 @@
             </div> загрузить ещё</div>
     </section>
     <!-- Lyuda's block -->
-    <main><!-- Lyuda's block -->
+    <div><!-- Lyuda's block -->
    	    <div class="headline">
 	    	<h3 class="headline__text">запрос на услуги</h3>
 	    	<div class="line"></div>
@@ -211,37 +211,38 @@
 	    	<section class="request__client">
 		    	<div class= "request__inf client" >
 		    		<div class="client__inf">
-		    			<label  class="client__item">
-				    		<input type="text" name="name" placeholder="ИМЯ*" required >
+		    			<label >
+				    		<input type="text" name="name" placeholder="ИМЯ*" required class="client__item">
 				    	</label>
-				    	<label  class="client__item">	
-				    		<input type="tel" name="tel" placeholder="ТЕЛЕФОН*" required >
+				    	<label >	
+				    		<input type="tel" name="tel" placeholder="ТЕЛЕФОН*" required class="client__item">
 				    	</label>
-				    	<label  class="client__item">
-				    		<input type="email" name="email" placeholder="E-MAIL*" required>
+				    	<label >
+				    		<input type="email" name="email" placeholder="E-MAIL*" required class="client__item">
 				    	</label>
-				    	<label  class="client__item">
-				    		<input type="url" name="site" placeholder="САЙТ" >
+				    	<label >
+				    		<input type="url" name="site" placeholder="САЙТ" class="client__item">
 			    		</label>
 				    	<div class="client__select select" >
 				    		<div class="select__arrow arrow">
 				    			<div class="arrow__up"></div>
 				    			<div class="arrow__down"></div>
 				    		</div> 
-				    		
-				    		<select  size="1" name="interest" class="select__menu">
-					    			<option value="1" > ○ Наведение порядка в делах
-					    			</option >
-					    			<option value="2">
+                            <label for="interest" class="select__label">меня интересует</label>
+				     		<select  size="1" name="interest" id="interest" class="select__menu">
+                                <option value="0"></option>
+					    		<option value="1" > ○ Наведение порядка в делах</option >
+					    		<option value="2">
 					    				○ Правовое сопровождение деятельности
-					    			</option >
-					    			<option value="3">
+					    		</option >
+					    		<option value="3">
 					     				○ Оптимизация договорных отношений
-					    			</option>
-					    			<option value="4">
+					    		</option>
+					    		<option value="4">
 					      				○ Разработка договоров
-					    			</option>
+					    		</option>
 				    		</select>
+
 				    	</div>
 				    </div> <!--class="client__inf"-->
 			    </div>
@@ -252,13 +253,13 @@
 	    	</section>
 	    		<button type="submit" class="request__button button">отправить</button>
 	      </form>
-    </main>
+    </div>
     <footer class="footer">
     	<div class="footer__contacts">
     		<h3>pravo agency</h3>
     		<p>
     			01001, Киев, ул. Костёльная 9, оф.8<br>
-    			<a href="tel:+3 80(67)324 10 10" class="footer__tel">+3 80(67)324 10 10</a><br>
+    			<a href="tel:+380673241010" class="footer__tel">+3 80(67)324 10 10</a><br>
     			<a href="mailto:hello@pravo.agency" class="footer__mail">hello@pravo.agency</a>
     		</p>
     		<div class="footer__social ">
@@ -280,8 +281,17 @@
     <script>
     	$(document).ready(function(){
     		$('.select__menu').selectric({
-    			labelBuilder: 'меня интересует'
     		});
+            $('#interest').change(function() {
+                if($(this).val() != 0 )
+                {
+                $(".select__label").css("display", "none");
+                }
+                 else
+                 {
+                 $(".select__label").css("display", "block");
+                    }
+            });
     	});
 
         // Tatsiak's scripts are bellow.

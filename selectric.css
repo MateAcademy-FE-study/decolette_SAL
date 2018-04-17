@@ -19,7 +19,7 @@
 
 .selectric .label {
   display: block;
-  
+ 
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0 30px 0 0;
@@ -128,12 +128,12 @@
   left: -100%;
 }
 
-.selectric-hide-select.selectric-is-native {
+/*.selectric-hide-select.selectric-is-native {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 10;
-}
+}*/
 
 .selectric-hide-select.selectric-is-native select {
   position: absolute;
@@ -161,7 +161,7 @@
   outline: none !important;
   border: none !important;
   *font: 0/0 a !important;
-  background: none !important;
+  background: #fcfcfd !important;
 }
 
 /*.selectric-temp-show {
@@ -195,7 +195,7 @@
 }
 
 .selectric-items ul, .selectric-items li {
-   list-style-type:circle;
+  
   margin: 0;
   font-size: 13px;
   line-height: 20px;
@@ -207,10 +207,12 @@
   padding: 5px 20px;
   color: #3c3f46;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .selectric-items li.highlighted {
   color: #444;
+  height: 10px;
  }
 
 .selectric-items li:hover {
@@ -230,7 +232,7 @@
           user-select: none;  
 }   */
 
-.selectric-items .selectric-group .selectric-group-label {
+/*.selectric-items .selectric-group .selectric-group-label {
   font-weight: bold;
   padding-left: 10px;
   cursor: default;
@@ -240,7 +242,7 @@
           user-select: none;
   background: none;
   color: #444;  
-}  
+}  */
 
 .selectric-items .selectric-group.disabled li {
   filter: alpha(opacity=100);
@@ -253,22 +255,22 @@
 }   
 
 .selectric-label {
-	background: #fcfcfd;
-	font-size:13px;
-	font-weight: bold;
-	height:100%;
-	line-height:50px;
-	z-index:1;
-	text-transform: uppercase;
-	padding-left: 20px;
-	color:#3c3f46;
+  background: #fcfcfd;
+  font-size:13px;
+  font-weight: bold;
+  height:100%;
+  line-height:50px;
+  z-index:1;
+  padding-left: 20px;
+  color:#3c3f46;
 } 
+
 .selectric-button {
-	opacity:0;
+  opacity:0;
 }
 .selectric-items ul {
-	list-style-type: circle;
-	padding: 15px 0;
+  list-style-type: circle;
+  padding: 15px 0;
 }
 @font-face {
   font-family: GothamPro;
