@@ -1,0 +1,23 @@
+{
+  "name": "decolette_sal",
+  "version": "1.0.0",
+  "description": "edu project",
+  "main": "jquery.selectric.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateAcademy-FE-study/decolette_SAL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MateAcademy-FE-study/decolette_SAL/issues"
+  },
+  "homepage": "https://github.com/MateAcademy-FE-study/decolette_SAL#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
