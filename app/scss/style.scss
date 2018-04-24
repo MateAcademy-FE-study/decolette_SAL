@@ -1,0 +1,15 @@
+@import "middleBlockStyles";
+
+@font-face {
+  font-family: GothamPro;
+  src: url("fonts/GothamProRegular.woff");
+}
+
+@font-face {
+  font-family: GothamProBold;
+  src: url("fonts/GothamProBold.woff");
+}
+
+body {
+  font-family: GothamPro;
+}

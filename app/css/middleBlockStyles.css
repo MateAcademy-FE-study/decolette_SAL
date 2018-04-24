@@ -1,6 +1,0 @@
-.services-block {
-  border-bottom: 1px solid var(--border-grey-color);
-  border-top: 1px solid var(--border-grey-color);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
