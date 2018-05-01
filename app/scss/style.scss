@@ -1,13 +1,14 @@
 @import "middleBlockStyles";
-
+@import "lastPart";
+@import "selectric";
 @font-face {
   font-family: GothamPro;
-  src: url("fonts/GothamProRegular.woff");
+  src: url("../fonts/GothamProRegular.woff");
 }
 
 @font-face {
   font-family: GothamProBold;
-  src: url("fonts/GothamProBold.woff");
+  src: url("../fonts/GothamProBold.woff");
 }
 
 body {

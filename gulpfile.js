@@ -38,12 +38,17 @@ gulp.task('fonts', function(){
         .pipe(gulp.dest('dist/fonts'))
 })
 
+gulp.task('scripts', function(){
+    return gulp.src('app/js/**')
+        .pipe(gulp.dest('dist/js'))
+})
+
 gulp.task('clean:dist', function(){
     return del.sync('dist');
 })
 
 gulp.task('build', function(callback){
-    runSequence('clean:dist', ['styles', 'html', 'images', 'fonts'])
+    runSequence('clean:dist', ['styles', 'html', 'images', 'fonts', 'scripts'])
 })
 
 gulp.task('default', ['build', 'watch'])
