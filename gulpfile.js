@@ -1,23 +1,25 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var imagemin = require('gulp-imagemin');
-var del = require('del');
-var runSequence = require('run-sequence');
+var gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    imagemin = require('gulp-imagemin'),
+    del = require('del'),
+    runSequence = require('run-sequence'),
+    rename = require('gulp-rename'),
+    cssnano = require('gulp-cssnano'),
+    autoprefixer = require('gulp-autoprefixer');
 
-gulp.task('hello', function() {
-    console.log('hello, man!')
-})
-
-gulp.task('sass', function(){
+gulp.task('styles', function(){
     return gulp.src('app/scss/style.scss')
         .pipe(sass())
+        .pipe(autoprefixer('last 2 version'))
+        .pipe(gulp.dest('dist/css'))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(cssnano())
         .pipe(gulp.dest('dist/css'))
 });
 
 gulp.task('watch', function(){
-    gulp.watch('app/scss/**/*.scss', ['build']); 
-    gulp.watch('app/**/*.html', ['build']); 
-    // Other watchers
+    gulp.watch('app/scss/**/*.scss', ['styles']); 
+    gulp.watch('app/**/*.html', ['html']); 
   })
 
 gulp.task('html', function(){
@@ -31,10 +33,14 @@ gulp.task('images', function(){
         .pipe(gulp.dest('dist/img'))
 })
 
-
 gulp.task('fonts', function(){
     return gulp.src('app/fonts/**/*')
         .pipe(gulp.dest('dist/fonts'))
+})
+
+gulp.task('scripts', function(){
+    return gulp.src('app/js/**')
+        .pipe(gulp.dest('dist/js'))
 })
 
 gulp.task('clean:dist', function(){
@@ -42,5 +48,7 @@ gulp.task('clean:dist', function(){
 })
 
 gulp.task('build', function(callback){
-    runSequence('clean:dist', ['sass', 'html', 'images', 'fonts'])
+    runSequence('clean:dist', ['styles', 'html', 'images', 'fonts', 'scripts'])
 })
+
+gulp.task('default', ['build', 'watch'])
