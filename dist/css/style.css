@@ -1,3 +1,177 @@
+<<<<<<< HEAD
+.content {
+  margin: auto; }
+
+.grey {
+  background-color: #f5f5f5;
+  padding-left: 120px; }
+
+.list__element {
+  display: inline;
+  text-transform: uppercase; }
+
+.welcomeline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 100px;
+  position: absolute;
+  margin-top: 50px; }
+
+.list {
+  margin-left: 400px;
+  font-family: GothamPro;
+  font-size: 15px;
+  color: #3f4147; }
+
+.list__element {
+  margin-right: 30px; }
+
+.list__element:hover {
+  color: #a70c5d;
+  transition: 1s; }
+
+.language {
+  border-radius: 15px;
+  width: 55px;
+  height: 25px;
+  margin-top: 10px;
+  margin-left: 60px;
+  color: #a70c5d; }
+
+.language:hover {
+  border: 3px solid #a70c5d;
+  color: #a70c5d;
+  transition: 0.5s; }
+
+.welcome {
+  background-image: url("../img/dude.jpg");
+  width: 100%;
+  background-repeat: no-repeat; }
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  margin-left: 100px; }
+
+.title {
+  font-family: GothamPro;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 175px; }
+
+.title::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #a70c5d;
+  margin-top: 30px; }
+
+.text {
+  font-family: GothamPro;
+  font-size: 15px;
+  line-height: 24px; }
+
+.downloadinfo {
+  color: #a70c5d;
+  background-color: #fff;
+  padding: 10px;
+  padding-left: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: GothamProBold;
+  font-size: 12px;
+  border-radius: 50px;
+  border: 3px solid;
+  display: flex;
+  justify-content: space-around;
+  width: 170px;
+  align-items: center;
+  color: white;
+  background-color: #810a47;
+  margin-bottom: 80px;
+  margin-top: 20px; }
+
+.downloadinfo::before {
+  content: url("../images/dlyauslugiiceny.png");
+  padding-left: 10px;
+  padding-right: 1px; }
+
+.play {
+  background-image: url("../img/plaplay.png");
+  position: absolute;
+  top: 300px;
+  left: 600px;
+  width: 90px;
+  height: 90px; }
+
+.downloadinfo__img {
+  background-image: url(../img/dlyauslugiiceny.png);
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat; }
+
+.texts {
+  text-align: center;
+  margin-top: 50px;
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.newtitle {
+  font-family: GothamPro;
+  line-height: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.newtitle::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #a70c5d;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.texts__paragraph {
+  font-family: GothamPro;
+  line-height: 20px;
+  font-size: 15px; }
+
+@media only screen and (max-width: 1300px) {
+  .language {
+    display: flex-wrap;
+    margin-right: 30px; }
+  .list {
+    margin-left: 0px; } }
+
+@media only screen and (max-width: 1150px) {
+  .welcome {
+    background-image: none; } }
+
+@media only screen and (max-width: 788px) {
+  .grey {
+    padding-left: 0px; } }
+
+:root {
+  --violet-color: #a70c5d;
+  --border-grey-color: #f1f1f1;
+  --grey-text: #c9cacf; }
+
+.services-block {
+  border-bottom: 1px solid var(--border-grey-color);
+  border-top: 1px solid var(--border-grey-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.content-block {
+  width: 100%; }
+=======
 .services-block {
   border-bottom: 1px solid #f1f1f1;
   border-top: 1px solid #f1f1f1;
@@ -9,6 +183,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+>>>>>>> 01eea72c4a1f86bb43087da40c811ad948b04c29
 
 .service {
   display: inline-block;
@@ -27,14 +202,22 @@
   border-radius: 50%;
   width: 20px;
   height: 20px;
+<<<<<<< HEAD
+  border: 2px solid var(--violet-color);
+=======
   border: 2px solid #a70c5d;
+>>>>>>> 01eea72c4a1f86bb43087da40c811ad948b04c29
   text-align: center;
   line-height: 20px;
   margin-top: -5px; }
 
 .service__info_hover {
   color: white;
+<<<<<<< HEAD
+  background-color: var(--violet-color); }
+=======
   background-color: #a70c5d; }
+>>>>>>> 01eea72c4a1f86bb43087da40c811ad948b04c29
 
 .service__title {
   font-family: GothamProBold;
@@ -66,6 +249,32 @@
   margin-top: -20px; }
 
 .details__top {
+<<<<<<< HEAD
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+.short_line {
+  color: var(--violet-color);
+  font-weight: 900;
+  margin-bottom: 10px; }
+
+.feedbacks_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  margin-bottom: 70px; }
+
+.feedbacks_title > span:after {
+  display: block;
+  content: "";
+  border-bottom: var(--violet-color) 2px solid;
+  height: 5px;
+  width: 30px;
+  margin: 0 auto; }
+=======
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,11 +309,16 @@
     height: 5px;
     width: 30px;
     margin: 0 auto; }
+>>>>>>> 01eea72c4a1f86bb43087da40c811ad948b04c29
 
 .quote-character {
   font-size: 35px;
   font-family: GothamProBold;
+<<<<<<< HEAD
+  color: var(--grey-text); }
+=======
   color: #c9cacf; }
+>>>>>>> 01eea72c4a1f86bb43087da40c811ad948b04c29
 
 .feedback {
   width: 300px;
@@ -116,27 +330,44 @@
 .author__avatar {
   width: 35px;
   height: 35px; }
+<<<<<<< HEAD
+
+.author__avatar > img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%; }
+=======
   .author__avatar img {
     max-width: 100%;
     max-height: 100%;
     border-radius: 50%; }
+>>>>>>> 01eea72c4a1f86bb43087da40c811ad948b04c29
 
 .author__name {
   margin-top: 10px; }
 
 .middot {
+<<<<<<< HEAD
+  color: var(--violet-color);
+=======
   color: #a70c5d;
+>>>>>>> 01eea72c4a1f86bb43087da40c811ad948b04c29
   font-weight: 900;
   font-family: GothamProBold;
   font-size: 22px; }
 
 .feedback-items {
+<<<<<<< HEAD
+  display: flex;
+  justify-content: center;
+=======
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+>>>>>>> 01eea72c4a1f86bb43087da40c811ad948b04c29
   margin-top: 20px; }
 
 .loadmore {
@@ -146,6 +377,29 @@
   font-size: 15px;
   vertical-align: middle;
   text-transform: uppercase; }
+<<<<<<< HEAD
+
+.loadmore > div {
+  display: inline-block;
+  height: 25px;
+  width: 25px; }
+
+.loadmore > div > img {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out; }
+
+.loadmore > div > img:hover {
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg); }
+
+.feedbacks_title > span {
+  font-family: GothamProBold;
+  font-size: 30px; }
+=======
   .loadmore div {
     display: inline-block;
     height: 25px;
@@ -162,6 +416,7 @@
       max-height: 100%;
       -webkit-transform: rotate(360deg);
       transform: rotate(360deg); }
+>>>>>>> 01eea72c4a1f86bb43087da40c811ad948b04c29
 
 .youtube-logo {
   margin-bottom: 10px; }
@@ -179,6 +434,8 @@
 
 body {
   font-family: GothamPro; }
+<<<<<<< HEAD
+=======
 
 .container {
   padding-right: 15px;
@@ -197,3 +454,4 @@ body {
 @media (min-width: 1200px) {
   .container {
     width: 1170px; } }
+>>>>>>> 01eea72c4a1f86bb43087da40c811ad948b04c29
