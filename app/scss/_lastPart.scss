@@ -59,7 +59,7 @@ transparent;
 	  	outline: none;
 	 	transition: border-color 0.3s linear;
  		&:focus {
-  			border-color:transparent transparent #c4045f 
+  			border-color: transparent transparent #c4045f 
 transparent;
 		}
 	}
@@ -78,7 +78,6 @@ transparent;
 		font-size: 11px;
 		width: 100%;
 		-webkit-appearance: none;
-		
 	}
 	&__label {
 		position: absolute;
