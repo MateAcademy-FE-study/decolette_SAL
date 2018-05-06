@@ -1,11 +1,7 @@
 @charset "UTF-8";
 .content {
-<<<<<<< HEAD
   margin: auto;
   margin: -8px; }
-=======
-  margin: auto; }
->>>>>>> a281b6722a7fecfaebe1b1a0923d56d7f92bce77
 
 .grey {
   background-color: #f5f5f5;
@@ -36,7 +32,6 @@
   font-size: 15px;
   color: #3f4147; }
 
-<<<<<<< HEAD
 .list a {
   text-decoration: none;
   font-family: GothamPro;
@@ -50,15 +45,6 @@
   color: #a70c5d;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
-=======
-.list__element {
-  margin-right: 30px; }
-
-.list__element:hover {
-  color: #a70c5d;
-  -webkit-transition: 1s;
-  transition: 1s; }
->>>>>>> a281b6722a7fecfaebe1b1a0923d56d7f92bce77
 
 .language {
   border-radius: 15px;
@@ -71,23 +57,14 @@
 .language:hover {
   border: 3px solid #a70c5d;
   color: #a70c5d;
-<<<<<<< HEAD
   -webkit-transition: 0.3s;
   transition: 0.3s; }
-=======
-  -webkit-transition: 0.5s;
-  transition: 0.5s; }
->>>>>>> a281b6722a7fecfaebe1b1a0923d56d7f92bce77
 
 .welcome {
   background-image: url("../img/dude.jpg");
   width: 100%;
-<<<<<<< HEAD
   background-repeat: no-repeat;
   height: 670px; }
-=======
-  background-repeat: no-repeat; }
->>>>>>> a281b6722a7fecfaebe1b1a0923d56d7f92bce77
 
 .vertical {
   display: -webkit-box;
@@ -144,24 +121,17 @@
   margin-bottom: 80px;
   margin-top: 20px; }
 
-<<<<<<< HEAD
 .downloadinfo a {
   text-decoration: none;
   color: white; }
 
-=======
->>>>>>> a281b6722a7fecfaebe1b1a0923d56d7f92bce77
 .downloadinfo::before {
   content: url("../images/dlyauslugiiceny.png");
   padding-left: 10px;
   padding-right: 1px; }
 
 .play {
-<<<<<<< HEAD
   background-image: url("../img/playplay.png");
-=======
-  background-image: url("../img/plaplay.png");
->>>>>>> a281b6722a7fecfaebe1b1a0923d56d7f92bce77
   position: absolute;
   top: 300px;
   left: 600px;
@@ -208,7 +178,6 @@
     display: flex-wrap;
     margin-right: 30px; }
   .list {
-<<<<<<< HEAD
     margin-left: 0px; }
   .play {
     -webkit-transform: translateY(-50px);
@@ -235,13 +204,6 @@
     margin: 30px; }
   .language {
     margin-top: 17px; } }
-=======
-    margin-left: 0px; } }
-
-@media only screen and (max-width: 1150px) {
-  .welcome {
-    background-image: none; } }
->>>>>>> a281b6722a7fecfaebe1b1a0923d56d7f92bce77
 
 @media only screen and (max-width: 788px) {
   .grey {

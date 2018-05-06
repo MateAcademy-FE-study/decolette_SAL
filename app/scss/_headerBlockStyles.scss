@@ -1,10 +1,7 @@
 .content{
 	
 	margin:auto;
-<<<<<<< HEAD
 	margin:-8px;
-=======
->>>>>>> a281b6722a7fecfaebe1b1a0923d56d7f92bce77
 
 }
 .grey{
@@ -31,7 +28,6 @@
 	font-size: 15px;
 	color: rgb(63, 65, 71);
 }
-<<<<<<< HEAD
 .list a{
 	text-decoration: none;
 	font-family:GothamPro;
@@ -44,14 +40,6 @@
 .list__element a:hover{
 	color: rgb(167, 12, 93);
 	transition: 0.3s;
-=======
-.list__element{
-	margin-right: 30px;
-}
-.list__element:hover{
-	color: rgb(167, 12, 93);
-	transition: 1s;
->>>>>>> a281b6722a7fecfaebe1b1a0923d56d7f92bce77
 }
 .language{
 	border-radius: 15px;
@@ -64,20 +52,13 @@
 .language:hover{
 	border: 3px solid rgb(167, 12, 93);
     color: rgb(167, 12, 93);
-<<<<<<< HEAD
     transition: 0.3s;
-=======
-    transition: 0.5s;
->>>>>>> a281b6722a7fecfaebe1b1a0923d56d7f92bce77
 }
 .welcome{
 	background-image: url("../img/dude.jpg");
 	width: 100%;
 	background-repeat: no-repeat;
-<<<<<<< HEAD
 	height:670px;
-=======
->>>>>>> a281b6722a7fecfaebe1b1a0923d56d7f92bce77
 
 }
 .vertical{
@@ -126,13 +107,10 @@ color:#a70c5d;
   margin-bottom:  80px;
   margin-top: 20px;
 }
-<<<<<<< HEAD
 .downloadinfo a{
 	text-decoration: none;
     color: white;
 }
-=======
->>>>>>> a281b6722a7fecfaebe1b1a0923d56d7f92bce77
 .downloadinfo::before{
     content: url("../images/dlyauslugiiceny.png");
     padding-left: 10px;
@@ -140,11 +118,7 @@ color:#a70c5d;
 }
 
 .play{
-<<<<<<< HEAD
     background-image: url("../img/playplay.png");
-=======
-    background-image: url("../img/plaplay.png");
->>>>>>> a281b6722a7fecfaebe1b1a0923d56d7f92bce77
   position:absolute;
   top:300px;
   left:600px;
@@ -197,7 +171,6 @@ color:#a70c5d;
     .list{
 	margin-left: 0px;
 }
-<<<<<<< HEAD
 .play{
 	transform:translateY(-50px)
 }
@@ -234,23 +207,9 @@ color:#a70c5d;
 
 }
 
-=======
-}
-@media only screen and (max-width: 1150px) {
-.welcome{
-	background-image: none;
-
-}
-}
->>>>>>> a281b6722a7fecfaebe1b1a0923d56d7f92bce77
 @media only screen and (max-width: 788px) {
 .grey{
     padding-left: 0px;
 }
 
-<<<<<<< HEAD
 }
-=======
-}
-
->>>>>>> a281b6722a7fecfaebe1b1a0923d56d7f92bce77
