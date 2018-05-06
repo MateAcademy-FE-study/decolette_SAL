@@ -205,6 +205,10 @@
   .language {
     margin-top: 17px; } }
 
+@media only screen and (max-width: 1150px) {
+  .welcome {
+    background-image: none; } }
+
 @media only screen and (max-width: 788px) {
   .grey {
     padding-left: 0px; } }
