@@ -524,6 +524,38 @@
     .footer__lastline span {
       font-weight: 800; }
 
+@media (max-width: 578px) {
+  .request {
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 50px; }
+    .request__client {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+    .request__inf {
+      width: 100%;
+      padding-bottom: 50px;
+      position: relative; }
+    .request__add-inf {
+      width: 100%;
+      margin-top: 5px; }
+  .add-inf__textarea {
+    resize: none;
+    outline: none;
+    width: 100%;
+    height: 80px; } }
+
 .selectric-wrapper {
   position: relative; }
 
@@ -579,7 +611,7 @@
   color: #888; }
 
 .selectric-open {
-  z-index: 9999; }
+  z-index: 0; }
 
 .selectric-open .selectric {
   border-color: #ccc;
