@@ -1,6 +1,7 @@
 .content{
 	
 	margin:auto;
+	margin:-8px;
 
 }
 .grey{
@@ -27,12 +28,18 @@
 	font-size: 15px;
 	color: rgb(63, 65, 71);
 }
+.list a{
+	text-decoration: none;
+	font-family:GothamPro;
+	font-size: 15px;
+	color: rgb(63, 65, 71);
+}
 .list__element{
 	margin-right: 30px;
 }
-.list__element:hover{
+.list__element a:hover{
 	color: rgb(167, 12, 93);
-	transition: 1s;
+	transition: 0.3s;
 }
 .language{
 	border-radius: 15px;
@@ -45,12 +52,13 @@
 .language:hover{
 	border: 3px solid rgb(167, 12, 93);
     color: rgb(167, 12, 93);
-    transition: 0.5s;
+    transition: 0.3s;
 }
 .welcome{
 	background-image: url("../img/dude.jpg");
 	width: 100%;
 	background-repeat: no-repeat;
+	height:670px;
 
 }
 .vertical{
@@ -99,6 +107,10 @@ color:#a70c5d;
   margin-bottom:  80px;
   margin-top: 20px;
 }
+.downloadinfo a{
+	text-decoration: none;
+    color: white;
+}
 .downloadinfo::before{
     content: url("../images/dlyauslugiiceny.png");
     padding-left: 10px;
@@ -106,7 +118,7 @@ color:#a70c5d;
 }
 
 .play{
-    background-image: url("../img/plaplay.png");
+    background-image: url("../img/playplay.png");
   position:absolute;
   top:300px;
   left:600px;
@@ -159,17 +171,45 @@ color:#a70c5d;
     .list{
 	margin-left: 0px;
 }
+.play{
+	transform:translateY(-50px)
 }
-@media only screen and (max-width: 1150px) {
+}
+@media only screen and (max-width: 1300px) {
 .welcome{
-	background-image: none;
+	 background-position: -250px; 
+	 z-index: 0;
 
 }
 }
+@media only screen and (max-width: 1000px) {
+.welcome{
+	background-image: none;
+}
+.play{
+	display:none;
+}
+}
+
+@media only screen and (max-width: 925px) {
+	.list__element{
+		display: block;
+		line-height:25px;
+	}
+	.logo{
+		transform: scale(1.5);
+		margin: 30px;
+
+	}
+	.language{
+		margin-top:17px;
+	}
+
+}
+
 @media only screen and (max-width: 788px) {
 .grey{
     padding-left: 0px;
 }
 
 }
-
