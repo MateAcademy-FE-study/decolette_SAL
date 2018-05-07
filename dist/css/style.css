@@ -32,10 +32,16 @@
   font-size: 15px;
   color: #3f4147; }
 
+.list a {
+  text-decoration: none;
+  font-family: GothamPro;
+  font-size: 15px;
+  color: #3f4147; }
+
 .list__element {
   margin-right: 30px; }
 
-.list__element:hover {
+.list__element a:hover {
   color: #a70c5d;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
@@ -115,13 +121,17 @@
   margin-bottom: 80px;
   margin-top: 20px; }
 
+.downloadinfo a {
+  text-decoration: none;
+  color: white; }
+
 .downloadinfo::before {
   content: url("../images/dlyauslugiiceny.png");
   padding-left: 10px;
   padding-right: 1px; }
 
 .play {
-  background-image: url("../img/plaplay.png");
+  background-image: url("../img/playplay.png");
   position: absolute;
   top: 300px;
   left: 600px;
@@ -168,11 +178,32 @@
     display: flex-wrap;
     margin-right: 30px; }
   .list {
-    margin-left: 0px; } }
+    margin-left: 0px; }
+  .play {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px); } }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1300px) {
   .welcome {
-    background-image: none; } }
+    background-position: -250px;
+    z-index: 0; } }
+
+@media only screen and (max-width: 1000px) {
+  .welcome {
+    background-image: none; }
+  .play {
+    display: none; } }
+
+@media only screen and (max-width: 925px) {
+  .list__element {
+    display: block;
+    line-height: 25px; }
+  .logo {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    margin: 30px; }
+  .language {
+    margin-top: 17px; } }
 
 @media only screen and (max-width: 788px) {
   .grey {
