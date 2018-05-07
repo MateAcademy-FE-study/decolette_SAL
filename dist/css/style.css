@@ -316,22 +316,14 @@
   font-size: 15px;
   vertical-align: middle;
   text-transform: uppercase; }
-  .loadmore div {
+  .loadmore::after {
+    content: "";
+    background-image: url("../img/load_more.svg");
     display: inline-block;
+    width: 25px;
     height: 25px;
-    width: 25px; }
-    .loadmore div img {
-      display: inline-block;
-      vertical-align: middle;
-      -webkit-transition: -webkit-transform 0.8s ease-in-out;
-      transition: -webkit-transform 0.8s ease-in-out;
-      transition: transform 0.8s ease-in-out;
-      transition: transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out; }
-    .loadmore div img:hover {
-      max-width: 100%;
-      max-height: 100%;
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg); }
+    vertical-align: middle;
+    margin-left: 15px; }
 
 .headline {
   width: 100%; }

@@ -21,7 +21,7 @@
         <section class="content">
             <section class="grey">
                 <div class="welcomeline">
-                    <img class="logo" src="img/logo.svg">
+                    <img class="logo" src="img/logo.svg" alt=logo>
                     <ul class="list">
                         <li class="list__element">
                             <a href="">услуги и цены</a>
@@ -151,7 +151,7 @@
             <div class=feedback-items>
                 <div class=feedback>
                     <div class=quote-character>“</div>
-                    <blockquote class=quote-text cite="Алексей Федоров">Главная тема для меня – любовь. Мы все хотим ее, но не знаем как получить, поэтому все, что мы делаем,
+                    <blockquote class=quote-text cite="Федоров">Главная тема для меня – любовь. Мы все хотим ее, но не знаем как получить, поэтому все, что мы делаем,
                         — это всего лишь попытки найти счастье.</blockquote>
                     <div class=author>
                         <div class=author__avatar>
@@ -168,7 +168,7 @@
                 </div>
                 <div class=feedback>
                     <div class=quote-character>“</div>
-                    <blockquote class=quote-text cite='Артур Оруджалиев'>Главная тема для меня – любовь. Мы все хотим ее, но не знаем как получить, поэтому все, что мы делаем,
+                    <blockquote class=quote-text cite='Оруджалиев'>Главная тема для меня – любовь. Мы все хотим ее, но не знаем как получить, поэтому все, что мы делаем,
                         — это всего лишь попытки найти счастье.</blockquote>
                     <div class=author>
                         <div class=author__avatar>
@@ -185,11 +185,10 @@
                 </div>
                 <div class=feedback>
                     <div class=youtube-logo>
-                        <img src='img/youtube_logo.png'>
+                        <img src='img/youtube_logo.png' alt=youtube>
                     </div>
                     <div class=video>
-                        <iframe width="220" height="170" src="https://www.youtube.com/embed/wkw8UBYn0pc" frameborder="0" allow="autoplay; encrypted-media"
-                            allowfullscreen></iframe>
+                        <iframe width="220" height="170" src="https://www.youtube.com/embed/wkw8UBYn0pc" allowfullscreen></iframe>
                     </div>
                     <div class=author__name>
                         <b>Григорий Маленко</b>
@@ -201,95 +200,91 @@
                 </div>
             </div>
         </section>
-        <div class=loadmore>
-            <div>
-                <img src="img/load_more.svg">
-            </div> загрузить ещё</div>
-    </div>
-    <!-- Lyuda's block -->
-    <section class=request-service>
-        <h2 class="section__title">запрос на услуги</h2>
-        <form class="request">
-            <section class="request__client">
-                <div class="request__inf client">
-                    <div class="client__inf">
-                        <label>
-                            <input type="text" name="name" placeholder="ИМЯ*" required class="client__item">
-                        </label>
-                        <label>
-                            <input type="tel" name="tel" placeholder="ТЕЛЕФОН*" required class="client__item">
-                        </label>
-                        <label>
-                            <input type="email" name="email" placeholder="E-MAIL*" required class="client__item">
-                        </label>
-                        <label>
-                            <input type="url" name="site" placeholder="САЙТ" class="client__item">
-                        </label>
-                        <div class="client__select select">
-                            <div class="select__arrow arrow">
-                                <div class="arrow__up"></div>
-                                <div class="arrow__down"></div>
-                            </div>
-                            <label for="interest" class="select__label">меня интересует</label>
-                            <select size="1" name="interest" id="interest" class="select__menu">
-                                <option value="0"></option>
-                                <option value="1"> ○ Наведение порядка в делах</option>
-                                <option value="2">
-                                    ○ Правовое сопровождение деятельности
-                                </option>
-                                <option value="3">
-                                    ○ Оптимизация договорных отношений
-                                </option>
-                                <option value="4">
-                                    ○ Разработка договоров
-                                </option>
-                            </select>
+        <div class=loadmore>загрузить ещё</div>
+        <!-- Lyuda's block -->
+        <section class=request-service>
+            <h2 class="section__title">запрос на услуги</h2>
+            <form class="request">
+                <section class="request__client">
+                    <div class="request__inf client">
+                        <div class="client__inf">
+                            <label>
+                                <input type="text" name="name" placeholder="ИМЯ*" required class="client__item">
+                            </label>
+                            <label>
+                                <input type="tel" name="tel" placeholder="ТЕЛЕФОН*" required class="client__item">
+                            </label>
+                            <label>
+                                <input type="email" name="email" placeholder="E-MAIL*" required class="client__item">
+                            </label>
+                            <label>
+                                <input type="url" name="site" placeholder="САЙТ" class="client__item">
+                            </label>
+                            <div class="client__select select">
+                                <div class="select__arrow arrow">
+                                    <div class="arrow__up"></div>
+                                    <div class="arrow__down"></div>
+                                </div>
+                                <label for="interest" class="select__label">меня интересует</label>
+                                <select size="1" name="interest" id="interest" class="select__menu">
+                                    <option value="0" label='mock'></option>
+                                    <option value="1"> ○ Наведение порядка в делах</option>
+                                    <option value="2">
+                                        ○ Правовое сопровождение деятельности
+                                    </option>
+                                    <option value="3">
+                                        ○ Оптимизация договорных отношений
+                                    </option>
+                                    <option value="4">
+                                        ○ Разработка договоров
+                                    </option>
+                                </select>
 
+                            </div>
                         </div>
+                        <!--class="client__inf"-->
                     </div>
-                    <!--class="client__inf"-->
+                    <div class="request__add-inf add-inf">
+                        <p>дополнительная информация</p>
+                        <textarea class="add-inf__textarea" name="addinf" placeholder="Введите текст.."></textarea>
+                    </div>
+                </section>
+                <button type="submit" class="request__button button">отправить</button>
+            </form>
+        </section>
+        <footer class="footer">
+            <div class="footer__contacts">
+                <h3>pravo agency</h3>
+                <p>
+                    01001, Киев, ул. Костёльная 9, оф.8
+                    <br>
+                    <a href="tel:+380673241010" class="footer__tel">+3 80(67)324 10 10</a>
+                    <br>
+                    <a href="mailto:hello@pravo.agency" class="footer__mail">hello@pravo.agency</a>
+                </p>
+                <div class="footer__social ">
+                    <a href="# " class="footer__link">
+                        <div class="footer__network">
+                            <span class="fab fa-facebook-f"></span>
+                        </div>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <div class="footer__network">
+                            <span class="fab fa-twitter"></span>
+                        </div>
+                    </a>
+                    <a href="# " class="footer__link">
+                        <div class="footer__network">
+                            <span class="fab fa-linkedin-in"></span>
+                        </div>
+                    </a>
                 </div>
-                <div class="request__add-inf add-inf">
-                    <p>дополнительная информация</p>
-                    <textarea class="add-inf__textarea" name="addinf" placeholder="Введите текст.."></textarea>
-                </div>
-            </section>
-            <button type="submit" class="request__button button">отправить</button>
-        </form>
-    </section>
-    <footer class="footer">
-        <div class="footer__contacts">
-            <h3>pravo agency</h3>
-            <p>
-                01001, Киев, ул. Костёльная 9, оф.8
-                <br>
-                <a href="tel:+380673241010" class="footer__tel">+3 80(67)324 10 10</a>
-                <br>
-                <a href="mailto:hello@pravo.agency" class="footer__mail">hello@pravo.agency</a>
-            </p>
-            <div class="footer__social ">
-                <a href="# " class="footer__link">
-                    <div class="footer__network">
-                        <span class="fab fa-facebook-f"></span>
-                    </div>
-                </a>
-                <a href="#" class="footer__link">
-                    <div class="footer__network">
-                        <span class="fab fa-twitter"></span>
-                    </div>
-                </a>
-                <a href="# " class="footer__link">
-                    <div class="footer__network">
-                        <span class="fab fa-linkedin-in"></span>
-                    </div>
-                </a>
             </div>
-        </div>
-        <p class="footer__lastline">2015,
-            <span>Pravo agency</span>
-        </p>
-        <!--© -->
-    </footer>
+            <p class="footer__lastline">2015,
+                <span>Pravo agency</span>
+            </p>
+            <!--© -->
+        </footer>
     </div>
     <script>
         $(document).ready(function () {
