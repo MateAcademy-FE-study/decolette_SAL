@@ -237,9 +237,8 @@
                                     <div class="arrow__up"></div>
                                     <div class="arrow__down"></div>
                                 </div>
-                                <label for="interest" class="select__label">меня интересует</label>
                                 <select size="1" name="interest" id="interest" class="select__menu">
-                                    <option value="0" label='mock'></option>
+                                    <option value="0" selected disabled="disabled" hidden="hidden">меня интересует</option>
                                     <option value="1"> ○ Наведение порядка в делах</option>
                                     <option value="2">
                                         ○ Правовое сопровождение деятельности
@@ -301,24 +300,12 @@
     <script>
         $(document).ready(function () {
             $('.select__menu').selectric({
+               // labelBuilder: 'меня интересует'
             });
-            $('#interest').change(function () {
-                if ($(this).val() != 0) {
-                    $(".select__label").css("display", "none");
-                }
-                else {
-                    $(".select__label").css("display", "block");
-                }
-            });
-<<<<<<< HEAD
-          });
-       
-                // Tatsiak's scripts are bellow.
-=======
+     
         });
 
         // Tatsiak's scripts are bellow.
->>>>>>> 2d07735c0535b67526ca03b57e921eb28a193ce5
         const services = document.querySelectorAll('.service');
         services.forEach(service => service.addEventListener('mouseover', () => {
             const infoIcon = service.querySelector('.service__info');
