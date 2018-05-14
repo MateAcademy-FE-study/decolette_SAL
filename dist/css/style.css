@@ -424,6 +424,7 @@
 .arrow {
   width: 20px;
   height: 20px;
+  background-color: #fcfcfd;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #cacbd0;
@@ -453,7 +454,7 @@
       -webkit-transform: rotate(-45deg);
               transform: rotate(-45deg);
       position: absolute;
-      margin-left: 2.5px;
+      margin-left: 3px;
       margin-top: 0;
       top: -2px;
       left: -2px; }
@@ -570,19 +571,8 @@
   height: 50px;
   overflow: hidden; }
 
-.selectric-items .disabled {
-  display: none;
-  filter: alpha(opacity=50);
-  opacity: 0.5;
-  cursor: default !important;
-  background: none !important;
-  color: #666 !important;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
 .selectric .label {
+  display: block;
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0 30px 0 0;
@@ -616,10 +606,7 @@
   border-bottom: none; }
 
 .selectric-hover .selectric {
-  border-color: #ccc; }
-
-.selectric-hover .selectric .button {
-  color: #888; }
+  /*border-color: #ccc;*/ }
 
 .selectric-open {
   z-index: 0; }
@@ -682,6 +669,18 @@
   z-index: -1;
   padding: 0; }
 
+.selectric-items .disabled {
+  display: none;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  cursor: default !important;
+  background: none !important;
+  color: #666 !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 .selectric-items .selectric-scroll {
   height: 100%;
   overflow: auto; }
@@ -706,7 +705,8 @@
   padding: 5px 20px;
   color: #3c3f46;
   cursor: pointer;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-left: 1px; }
 
 .selectric-items li.highlighted {
   color: #444;
@@ -714,7 +714,8 @@
 
 .selectric-items li:hover {
   background: #fefefe;
-  color: #c4045f; }
+  color: #c4045f;
+  font-weight: bold; }
 
 .selectric-items .selectric-group.disabled li {
   filter: alpha(opacity=100);
@@ -722,6 +723,20 @@
 
 .selectric-items .selectric-group li {
   padding-left: 25px; }
+
+.selectric-items li::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 2px solid #cacbd0;
+  border-radius: 4px;
+  margin-right: 10px;
+  display: inline-block; }
+
+.selectric-items li::before:hover {
+  border: 2px solid #c4045f; }
 
 .selectric-label {
   text-transform: uppercase;
@@ -732,13 +747,13 @@
   line-height: 50px;
   z-index: 0;
   padding-left: 20px;
-  color: #3c3f46; }
+  color: #3c3f46;
+  margin-left: 1px; }
 
 .selectric-button {
   opacity: 0; }
 
 .selectric-items ul {
-  list-style-type: circle;
   padding: 15px 0; }
 
 @font-face {
