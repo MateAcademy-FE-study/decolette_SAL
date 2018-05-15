@@ -141,7 +141,6 @@
                 </div>
             </div>
         </section>
-
         <section class=feedbacks>
             <h2 class="section__title">отзывы</h2>
             <p class="description">
@@ -168,7 +167,7 @@
                 </div>
                 <div class=feedback>
                     <div class=quote-character>“</div>
-                    <blockquote class=quote-text cite='Оруджалиев'>Главная тема для меня – любовь. Мы все хотим ее, но не знаем как получить, поэтому все, что мы делаем,
+                    <blockquote class=quote-text cite='Артур Оруджалиев'>Главная тема для меня – любовь. Мы все хотим ее, но не знаем как получить, поэтому все, что мы делаем,
                         — это всего лишь попытки найти счастье.</blockquote>
                     <div class=author>
                         <div class=author__avatar>
@@ -197,7 +196,7 @@
                         <span class=middot>&middot;</span>
                         <b>SERM.ua</b>
                     </div>
-                </div>
+                </div> 
             </div>
         </section>
         <div class=loadmore>загрузить ещё</div>
@@ -225,18 +224,17 @@
                                     <div class="arrow__up"></div>
                                     <div class="arrow__down"></div>
                                 </div>
-                                <label for="interest" class="select__label">меня интересует</label>
                                 <select size="1" name="interest" id="interest" class="select__menu">
-                                    <option value="0" label='mock'></option>
-                                    <option value="1"> ○ Наведение порядка в делах</option>
+                                    <option value="0" selected disabled="disabled" hidden="hidden">меня интересует</option>
+                                    <option value="1"> Наведение порядка в делах</option>
                                     <option value="2">
-                                        ○ Правовое сопровождение деятельности
+                                        Правовое сопровождение деятельности
                                     </option>
                                     <option value="3">
-                                        ○ Оптимизация договорных отношений
+                                        Оптимизация договорных отношений
                                     </option>
                                     <option value="4">
-                                        ○ Разработка договоров
+                                        Разработка договоров
                                     </option>
                                 </select>
 
@@ -289,15 +287,9 @@
     <script>
         $(document).ready(function () {
             $('.select__menu').selectric({
+               // labelBuilder: 'меня интересует'
             });
-            $('#interest').change(function () {
-                if ($(this).val() != 0) {
-                    $(".select__label").css("display", "none");
-                }
-                else {
-                    $(".select__label").css("display", "block");
-                }
-            });
+     
         });
 
         // Tatsiak's scripts are bellow.
