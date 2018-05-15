@@ -65,13 +65,17 @@
   .selectric-open .selectric {
 	border-color: #ccc;
 	/*  background: #dddddd;*/
-	border-bottom-width: 0;
+	
 
   }
-  
+  .selectric-above .selectric-items {
+  top: auto;
+  bottom: 100%;
+  border-bottom-width: 0;
+}
   .selectric-open .selectric-items {
 	display: block;
-
+	border-top-width: 0;
   }
   
   .selectric-hide-select {
