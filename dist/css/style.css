@@ -281,9 +281,18 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .feedbacks .feedback-items .feedback {
-    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 300px;
-    margin-right: 20px; }
+    height: 300px; }
     .feedbacks .feedback-items .feedback .youtube-logo {
       margin-bottom: 10px; }
     .feedbacks .feedback-items .feedback .quote-character {
@@ -291,7 +300,8 @@
       font-family: GothamProBold;
       color: #c9cacf; }
     .feedbacks .feedback-items .feedback .quote-text {
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      margin-left: 0; }
     .feedbacks .feedback-items .feedback .author .author__avatar {
       width: 35px;
       height: 35px; }
@@ -316,14 +326,14 @@
   font-size: 15px;
   vertical-align: middle;
   text-transform: uppercase; }
-  .loadmore::after {
+  .loadmore::before {
     content: "";
     background-image: url("../img/load_more.svg");
     display: inline-block;
     width: 25px;
     height: 25px;
     vertical-align: middle;
-    margin-left: 15px; }
+    margin-right: 15px; }
 
 .headline {
   width: 100%; }
@@ -769,7 +779,7 @@
   font-family: GothamProBold;
   src: url("../fonts/GothamProBold.woff"); }
 
-.wrapper * {
+body {
   font-family: GothamPro; }
 
 section h2.section__title {
@@ -796,3 +806,21 @@ section .description {
   line-height: 20px;
   font-size: 15px;
   margin-bottom: 50px; }
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px; } }
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
