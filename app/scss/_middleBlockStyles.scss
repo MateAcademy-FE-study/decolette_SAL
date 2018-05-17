@@ -112,6 +112,9 @@ $grey-text: #c9cacf;
         font-size: 35px;
         font-family: GothamProBold;
         color: $grey-text;
+        &:hover {
+          color: $violet-color;
+        }
       }
       .quote-text {
         margin-bottom: 30px;
@@ -119,8 +122,11 @@ $grey-text: #c9cacf;
         font-size: 17px;
         line-height:20px;
         color:#3c3f46;
+        overflow:hidden;
       }
       .author {
+        text-decoration:none;
+        color:#3c3f46;
         .author__avatar {
           width: 35px;
           height: 35px;
@@ -132,7 +138,6 @@ $grey-text: #c9cacf;
         }
         .author__name {
           margin-top: 10px;
-          color:#3c3f46;
           font-size:13px;
           line-height:20px;
         }
@@ -145,12 +150,22 @@ $grey-text: #c9cacf;
             font-size: 22px;
           }
         }
+        &:hover {
+          cursor:pointer;
+          .author__name {
+            color: $violet-color;
+            font-weight:bold;
+          }
+
+        }
       }
     }
   }
 }
 
 .loadmore {
+  text-decoration:none;
+  display:block;
   color:#434343;
   text-align: center;
   margin-top: 25px;
@@ -166,5 +181,8 @@ $grey-text: #c9cacf;
     height: 25px;
     vertical-align: middle;
     margin-right: 15px;
+  }
+  &:hover{
+    color: $violet-color;
   }
 }
