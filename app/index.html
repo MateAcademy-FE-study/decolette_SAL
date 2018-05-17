@@ -208,52 +208,53 @@
         <!-- Lyuda's block -->
         <section class=request-service>
             <h2 class="section__title">запрос на услуги</h2>
-            <form class="request">
-                <section class="request__client">
-                    <div class="request__inf client">
-                        <div class="client__inf">
-                            <label>
-                                <input type="text" name="name" placeholder="ИМЯ*" required class="client__item">
-                            </label>
-                            <label>
-                                <input type="tel" name="tel" placeholder="ТЕЛЕФОН*" required class="client__item">
-                            </label>
-                            <label>
-                                <input type="email" name="email" placeholder="E-MAIL*" required class="client__item">
-                            </label>
-                            <label>
-                                <input type="url" name="site" placeholder="САЙТ" class="client__item">
-                            </label>
-                            <div class="client__select select">
-                                <div class="select__arrow arrow">
-                                    <div class="arrow__up"></div>
-                                    <div class="arrow__down"></div>
-                                </div>
-                                <select size="1" name="interest" id="interest" class="select__menu">
-                                    <option value="0" selected disabled="disabled" hidden="hidden">меня интересует</option>
-                                    <option value="1"> Наведение порядка в делах</option>
-                                    <option value="2">
-                                        Правовое сопровождение деятельности
-                                    </option>
-                                    <option value="3">
-                                        Оптимизация договорных отношений
-                                    </option>
-                                    <option value="4">
-                                        Разработка договоров
-                                    </option>
-                                </select>
+            <div class="container-min">
+                <form class="request">
+                    <div class="request__form">
+                        <div class="request__inf client">
+                            <div class="client__inf">
+                                <label>
+                                    <input type="text" name="name" placeholder="ИМЯ*" required class="client__item">
+                                </label>
+                                <label>
+                                    <input type="tel" name="tel" placeholder="ТЕЛЕФОН*" required class="client__item">
+                                </label>
+                                <label>
+                                    <input type="email" name="email" placeholder="E-MAIL*" required class="client__item">
+                                </label>
+                                <label>
+                                    <input type="url" name="site" placeholder="САЙТ" class="client__item">
+                                </label>
+                                <div class="client__select select">
+                                    <div class="select__arrow arrow">
+                                        <div class="arrow__down"></div>
+                                    </div>
+                                    <select size="1" name="interest" id="interest" class="select__menu">
+                                        <option value="0" selected disabled="disabled" hidden="hidden">меня интересует</option>
+                                        <option value="1" data-circle="○"> Наведение порядка в делах</option>
+                                        <option value="2" data-circle="○">
+                                            Правовое сопровождение деятельности
+                                        </option>
+                                        <option value="3" data-circle="○">
+                                            Оптимизация договорных отношений
+                                        </option>
+                                        <option value="4" data-circle="○">
+                                            Разработка договоров
+                                        </option>
+                                    </select>
 
-                            </div>
+                                </div>
+                            </div> <!--class="client__inf"-->
                         </div>
-                        <!--class="client__inf"-->
+                        <div class="request__add-inf add-inf">
+                            <p>дополнительная информация</p>
+                            <textarea class="add-inf__textarea" name="addinf" placeholder="Введите текст.."></textarea>
+                        </div>
                     </div>
-                    <div class="request__add-inf add-inf">
-                        <p>дополнительная информация</p>
-                        <textarea class="add-inf__textarea" name="addinf" placeholder="Введите текст.."></textarea>
-                    </div>
-                </section>
-                <button type="submit" class="request__button button">отправить</button>
-            </form>
+                    <button type="submit" class="request__button button">отправить</button>
+                  
+                </form>
+            </div>
         </section>
         <footer class="footer">
             <div class="footer__contacts">
@@ -292,7 +293,7 @@
     <script>
         $(document).ready(function () {
             $('.select__menu').selectric({
-                // labelBuilder: 'меня интересует'
+                
             });
 
         });

@@ -23,6 +23,7 @@ $grey-text: #c9cacf;
       margin-bottom: -15px;
       margin-top: 15px;
       padding-top: 10px;
+      color:#3e4052;
     }
 
     .service__logo_svg {
@@ -51,16 +52,18 @@ $grey-text: #c9cacf;
         }
 
         .service__title {
+          color:#3c3f46;
           font-family: GothamProBold;
           display: inline-block;
           font-weight: 900;
           width: 400px;
-          font-size: 13px;
-          line-height: 15px;
+          font-size: 15px;
+          line-height: 20px;
           text-transform: uppercase;
         }
       }
       .service__list {
+        color:#3e4052;
         li {
           list-style-image: url("../img/li_icon.png");
           margin-left: -25px;
@@ -113,6 +116,9 @@ $grey-text: #c9cacf;
       .quote-text {
         margin-bottom: 30px;
         margin-left: 0;
+        font-size: 17px;
+        line-height:20px;
+        color:#3c3f46;
       }
       .author {
         .author__avatar {
@@ -126,6 +132,9 @@ $grey-text: #c9cacf;
         }
         .author__name {
           margin-top: 10px;
+          color:#3c3f46;
+          font-size:13px;
+          line-height:20px;
         }
         .author__title {
           line-height: 30px;
@@ -142,6 +151,7 @@ $grey-text: #c9cacf;
 }
 
 .loadmore {
+  color:#434343;
   text-align: center;
   margin-top: 25px;
   font-family: GothamProBold;
