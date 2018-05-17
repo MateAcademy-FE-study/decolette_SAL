@@ -14,6 +14,7 @@
 	border-radius: 0;
 	height: 50px;
 	overflow: hidden;
+	margin: -2px 0;
   }
  
   .selectric .label {
@@ -55,7 +56,7 @@
   }
   
   .selectric-hover .selectric {
-	/*border-color: #ccc;*/
+	
   }
   
    .selectric-open {
@@ -64,18 +65,18 @@
   
   .selectric-open .selectric {
 	border-color: #ccc;
-	/*  background: #dddddd;*/
+	
 	
 
   }
   .selectric-above .selectric-items {
   top: auto;
   bottom: 100%;
-  border-bottom-width: 0;
+
 }
   .selectric-open .selectric-items {
 	display: block;
-	border-top-width: 0;
+
   }
   
   .selectric-hide-select {
@@ -122,14 +123,15 @@
   /* Items box */
   .selectric-items {
 	display: none;
+	box-sizing:border-box;
 	position: absolute;
 	top: 100%;
 	left: 0;
 	background: white;
 	border: 2px solid #ccc;
-	border-top-width: 1;
 	z-index: -1;
 	padding: 0;
+	margin-top: -2px;
   }
    .selectric-items .disabled {
   display:none;
@@ -163,19 +165,20 @@
 	line-height: 20px;
 	min-height: 20px;
   }
-  
+
   .selectric-items li {
+  	box-sizing:border-box;
 	display: block;
 	padding: 5px 20px;
 	color: #3c3f46;
 	cursor: pointer;
 	overflow: hidden;
-	margin-left:1px;
+	margin: 0 1px;
   }
   
   .selectric-items li.highlighted {
-	color: #444;
-	height: 10px;
+	color: #767676;
+	
   }
   
   .selectric-items li:hover {
@@ -193,6 +196,7 @@
   .selectric-items .selectric-group li {
 	padding-left: 25px;
   }
+
   .selectric-items li::before {
   	box-sizing:border-box;
   	content:"";
