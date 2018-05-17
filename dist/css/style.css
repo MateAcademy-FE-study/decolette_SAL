@@ -303,33 +303,45 @@
       font-size: 35px;
       font-family: GothamProBold;
       color: #c9cacf; }
+      .feedbacks .feedback-items .feedback .quote-character:hover {
+        color: #a70c5d; }
     .feedbacks .feedback-items .feedback .quote-text {
       margin-bottom: 30px;
       margin-left: 0;
       font-size: 17px;
       line-height: 20px;
-      color: #3c3f46; }
-    .feedbacks .feedback-items .feedback .author .author__avatar {
-      width: 35px;
-      height: 35px; }
-      .feedbacks .feedback-items .feedback .author .author__avatar img {
-        max-width: 100%;
-        max-height: 100%;
-        border-radius: 50%; }
-    .feedbacks .feedback-items .feedback .author .author__name {
-      margin-top: 10px;
       color: #3c3f46;
-      font-size: 13px;
-      line-height: 20px; }
-    .feedbacks .feedback-items .feedback .author .author__title {
-      line-height: 30px; }
-      .feedbacks .feedback-items .feedback .author .author__title .middot {
-        color: #a70c5d;
-        font-weight: 900;
-        font-family: GothamProBold;
-        font-size: 22px; }
+      overflow: hidden; }
+    .feedbacks .feedback-items .feedback .author {
+      text-decoration: none;
+      color: #3c3f46; }
+      .feedbacks .feedback-items .feedback .author .author__avatar {
+        width: 35px;
+        height: 35px; }
+        .feedbacks .feedback-items .feedback .author .author__avatar img {
+          max-width: 100%;
+          max-height: 100%;
+          border-radius: 50%; }
+      .feedbacks .feedback-items .feedback .author .author__name {
+        margin-top: 10px;
+        font-size: 13px;
+        line-height: 20px; }
+      .feedbacks .feedback-items .feedback .author .author__title {
+        line-height: 30px; }
+        .feedbacks .feedback-items .feedback .author .author__title .middot {
+          color: #a70c5d;
+          font-weight: 900;
+          font-family: GothamProBold;
+          font-size: 22px; }
+      .feedbacks .feedback-items .feedback .author:hover {
+        cursor: pointer; }
+        .feedbacks .feedback-items .feedback .author:hover .author__name {
+          color: #a70c5d;
+          font-weight: bold; }
 
 .loadmore {
+  text-decoration: none;
+  display: block;
   color: #434343;
   text-align: center;
   margin-top: 25px;
@@ -345,6 +357,8 @@
     height: 25px;
     vertical-align: middle;
     margin-right: 15px; }
+  .loadmore:hover {
+    color: #a70c5d; }
 
 .request-service {
   max-height: 100vh; }
