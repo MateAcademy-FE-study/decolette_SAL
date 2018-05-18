@@ -99,6 +99,7 @@ $grey-text: #c9cacf;
     justify-content: center;
     margin-top: 20px;
     flex-wrap: wrap;
+    /*
     .feedback {
       display: flex;
       flex-direction: column;
@@ -158,6 +159,89 @@ $grey-text: #c9cacf;
           }
 
         }
+      }
+    }*/
+    .feedback {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 190px;
+      position: relative;
+      width:310px;
+      input {
+        display:none;
+        &:checked ~ .quote {
+          z-index: 1;
+          width:200%;
+          overflow:auto;
+          box-shadow: 0 0 8px rgba(112,114,119,0.9);
+        }
+      }
+      .author {
+        text-decoration:none;
+        color:#3c3f46;
+        .author__avatar {
+          width: 35px;
+          height: 35px;
+          img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 50%;
+          }
+        }
+        .author__name {
+          margin-top: 10px;
+          font-size:13px;
+          line-height:20px;
+        }
+        .author__title {
+          line-height: 30px;
+          .middot {
+            color: $violet-color;
+            font-weight: 900;
+            font-family: GothamProBold;
+            font-size: 22px;
+          }
+        }
+        &:hover {
+          cursor:pointer;
+          .author__name {
+            color: $violet-color;
+            font-weight:bold;
+          }
+        }
+      }
+      .quote {
+        position: absolute;
+        left: 0;
+        top: 0px;
+        width:100%;
+        height: 160px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transform: none;
+        transition: width 0.1s linear;
+        background-color:white;
+        .quote-character {
+          font-size: 35px;
+          font-family: GothamProBold;
+          color: $grey-text;
+          &:hover {
+            color: $violet-color;
+          }
+        }
+        .quote-text {
+          margin-top: 0;
+          margin-left: 0;
+          font-size: 17px;
+          line-height:25px;
+          color:#3c3f46;
+          overflow:hidden;
+        }
+      }
+      .youtube-logo {
+        margin-bottom: 17px;
+        margin-top: -190px;
       }
     }
   }
