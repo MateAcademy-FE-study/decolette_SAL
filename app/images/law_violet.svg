@@ -4,9 +4,10 @@
 	 viewBox="0 0 24 23" style="enable-background:new 0 0 24 23;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#a70c5d;stroke-width:0.75;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#a70c5d;stroke-width:0.5;stroke-miterlimit:10;}
-	.st2{fill:none;stroke:#a70c5d;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st3{stroke:#a70c5d;stroke-width:0.2758;stroke-miterlimit:10;}
+	.st1{fill:#a70c5d;stroke:#a70c5d;stroke-width:0.5;stroke-miterlimit:10;}
+	.st2{fill:#a70c5d;stroke:#a70c5d;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:#a70c5d;stroke:#a70c5d;stroke-width:0.2758;stroke-miterlimit:10;}
+	.fl0{fill:#a70c5d}
 </style>
 <g>
 	<polygon class="st0 svg__st" points="3.7,18 2.2,21.5 0.7,18 0.7,2.4 3.7,2.4 	"/>

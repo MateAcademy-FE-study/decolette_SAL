@@ -8,171 +8,181 @@ $grey-text: #c9cacf;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
+  .service {
+    display: inline-block;
+    min-height: 200px;
+    width: 500px;
+    margin: 30px;
+    .service__logo {
+      display: inline-block;
+      margin-right: 30px;
+      width: 25px;
+      height: 25px;
+    }
+    .service__description {
+      margin-bottom: -15px;
+      margin-top: 15px;
+      padding-top: 10px;
+      color:#3e4052;
+    }
 
-.service {
-  display: inline-block;
-  min-height: 200px;
-  width: 500px;
-  margin: 30px;
-}
+    .service__logo_svg {
+      max-width: 100%;
+      max-height: 100%;
+    }
 
-.service__list li {
-  list-style-image: url("../img/li_icon.png");
-  margin-left: -25px;
-  line-height: 25px;
-}
+    .service__details {
+      display: inline-block;
+      margin-left: 50px;
+      margin-top: -20px;
+      .details__top {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .service__info {
+          display: inline-block;
+          font-family: "Times New Roman", Times, serif;
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+          border: 2px solid $violet-color;
+          text-align: center;
+          line-height: 20px;
+          margin-top: -5px;
+        }
 
-.service__info {
-  display: inline-block;
-  font-family: "Times New Roman", Times, serif;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  border: 2px solid $violet-color;
-  text-align: center;
-  line-height: 20px;
-  margin-top: -5px;
-}
-
-.service__info_hover {
-  color: white;
-  background-color: $violet-color;
-}
-
-.service__title {
-  font-family: GothamProBold;
-  display: inline-block;
-  font-weight: 900;
-  width: 400px;
-  font-size: 13px;
-  line-height: 15px;
-  text-transform: uppercase;
-}
-
-.service__description {
-  margin-bottom: -15px;
-  margin-top: 15px;
-  padding-top: 10px;
-}
-
-.service__logo {
-  display: inline-block;
-  margin-right: 30px;
-  width: 25px;
-  height: 25px;
-}
-
-.service__logo_svg {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.service__details {
-  display: inline-block;
-  margin-left: 50px;
-  margin-top: -20px;
-}
-
-.details__top {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.feedbacks_title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20px;
-  margin-bottom: 70px;
-  span {
-    font-family: GothamProBold;
-    font-size: 30px;
-  }
-  span:after {
-    display: block;
-    content: "";
-    border-bottom: $violet-color 2px solid;
-    height: 5px;
-    width: 30px;
-    margin: 0 auto;
+        .service__title {
+          color:#3c3f46;
+          font-family: GothamProBold;
+          display: inline-block;
+          font-weight: 900;
+          width: 400px;
+          font-size: 15px;
+          line-height: 20px;
+          text-transform: uppercase;
+        }
+      }
+      .service__list {
+        color:#3e4052;
+        li {
+          list-style-image: url("../img/li_icon.png");
+          margin-left: -25px;
+          line-height: 25px;
+        }
+      }
+    }
   }
 }
-
-.quote-character {
-  font-size: 35px;
-  font-family: GothamProBold;
-  color: $grey-text;
-}
-
-.feedback {
-  width: 300px;
-  margin-right: 20px;
-}
-
-.quote-text {
-  margin-bottom: 30px;
-}
-
-.author__avatar {
-  width: 35px;
-  height: 35px;
-  img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 50%;
+.feedbacks {
+  .feedbacks_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 70px;
+    span {
+      font-family: GothamProBold;
+      font-size: 30px;
+    }
+    span:after {
+      display: block;
+      content: "";
+      border-bottom: $violet-color 2px solid;
+      height: 5px;
+      width: 30px;
+      margin: 0 auto;
+    }
   }
-}
+  .feedback-items {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    .feedback {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 300px;
+      height: 300px;
+      .youtube-logo {
+        margin-bottom: 10px;
+      }
+      .quote-character {
+        font-size: 35px;
+        font-family: GothamProBold;
+        color: $grey-text;
+        &:hover {
+          color: $violet-color;
+        }
+      }
+      .quote-text {
+        margin-bottom: 30px;
+        margin-left: 0;
+        font-size: 17px;
+        line-height:20px;
+        color:#3c3f46;
+        overflow:hidden;
+      }
+      .author {
+        text-decoration:none;
+        color:#3c3f46;
+        .author__avatar {
+          width: 35px;
+          height: 35px;
+          img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 50%;
+          }
+        }
+        .author__name {
+          margin-top: 10px;
+          font-size:13px;
+          line-height:20px;
+        }
+        .author__title {
+          line-height: 30px;
+          .middot {
+            color: $violet-color;
+            font-weight: 900;
+            font-family: GothamProBold;
+            font-size: 22px;
+          }
+        }
+        &:hover {
+          cursor:pointer;
+          .author__name {
+            color: $violet-color;
+            font-weight:bold;
+          }
 
-.author__name {
-  margin-top: 10px;
-}
-
-.middot {
-  color: $violet-color;
-  font-weight: 900;
-  font-family: GothamProBold;
-  font-size: 22px;
-}
-
-.feedback-items {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+        }
+      }
+    }
+  }
 }
 
 .loadmore {
+  text-decoration:none;
+  display:block;
+  color:#434343;
   text-align: center;
   margin-top: 25px;
   font-family: GothamProBold;
   font-size: 15px;
   vertical-align: middle;
   text-transform: uppercase;
-  div {
+  &::before {
+    content: "";
+    background-image: url("../img/load_more.svg");
     display: inline-block;
-    height: 25px;
     width: 25px;
-    img {
-      display: inline-block;
-      vertical-align: middle;
-      -webkit-transition: -webkit-transform 0.8s ease-in-out;
-      transition: transform 0.8s ease-in-out;
-    }
-    img:hover {
-      max-width: 100%;
-      max-height: 100%;
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 15px;
   }
-}
-
-.youtube-logo {
-  margin-bottom: 10px;
-}
-
-.author__title {
-  line-height: 30px;
+  &:hover{
+    color: $violet-color;
+  }
 }

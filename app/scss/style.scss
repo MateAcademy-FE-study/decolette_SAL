@@ -16,6 +16,36 @@ body {
   font-family: GothamPro;
 }
 
+section {
+  h2.section__title {
+    color:#3c3f46;
+    text-align: center;
+    font-family: GothamPro;
+    line-height: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 50px;
+  }
+  h2.section__title::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: rgb(167, 12, 93);
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .description {
+    text-align: center;
+    line-height: 20px;
+    font-size: 15px;
+    margin-bottom: 50px;
+    color:#434343;
+  }
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -37,3 +67,4 @@ body {
     width: 1170px;
   }
 }
+
