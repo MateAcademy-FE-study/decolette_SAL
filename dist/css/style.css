@@ -1,17 +1,5 @@
 @charset "UTF-8";
-.content {
-  margin: auto;
-  margin: -8px; }
-
-.grey {
-  background-color: #f5f5f5;
-  padding-left: 120px; }
-
-.list__element {
-  display: inline;
-  text-transform: uppercase; }
-
-.welcomeline {
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,9 +10,18 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: 100px;
-  position: absolute;
-  margin-top: 50px; }
+  padding-left: 30vh;
+  padding-right: 20vh;
+  padding-top: 50px;
+  background-color: #f5f5f5;
+  margin: -8px; }
+
+.logo {
+  z-index: 10; }
+
+.list__element {
+  display: inline;
+  text-transform: uppercase; }
 
 .list {
   margin-left: 400px;
@@ -62,9 +59,18 @@
 
 .welcome {
   background-image: url("../img/dude.jpg");
-  width: 100%;
+  background-size: 1240px 670px;
   background-repeat: no-repeat;
-  height: 670px; }
+  padding-left: 120px;
+  background-position: 30% 100%;
+  position: relative;
+  margin: 0 auto; }
+
+.grey {
+  background-color: #f5f5f5;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto; }
 
 .vertical {
   display: -webkit-box;
@@ -74,14 +80,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 380px;
+  width: 460px;
   margin-left: 100px; }
 
 .title {
   font-family: GothamPro;
   font-size: 30px;
   font-weight: bold;
-  margin-top: 175px; }
+  margin-top: 175px;
+  line-height: 35px; }
 
 .title::after {
   content: "";
@@ -133,8 +140,8 @@
 .play {
   background-image: url("../img/playplay.png");
   position: absolute;
-  top: 300px;
-  left: 600px;
+  top: 250px;
+  left: 690px;
   width: 90px;
   height: 90px; }
 
