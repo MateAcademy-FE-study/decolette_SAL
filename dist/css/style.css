@@ -393,7 +393,7 @@
     position: relative; }
   .request__add-inf {
     width: 47.5%;
-    margin-top: 13px; }
+    margin-top: 11px; }
   .request__button {
     position: absolute;
     left: 50%;
@@ -491,7 +491,10 @@
 .add-inf p {
   text-transform: uppercase;
   font-size: 11px;
-  font-weight: medium; }
+  line-height: 20px;
+  font-weight: 600;
+  color: #3c3f46;
+  margin-bottom: 2px; }
 
 .add-inf__textarea {
   padding: 15px;
