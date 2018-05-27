@@ -46,6 +46,7 @@
   transition: 0.3s; }
 
 .language {
+  outline: none;
   border-radius: 15px;
   width: 55px;
   height: 25px;
@@ -455,7 +456,7 @@
   background-color: #fcfcfd;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid #cacbd0;
+  border: 2px solid #cacbd0;
   border-radius: 10px;
   z-index: 2; }
   .arrow__down {
@@ -468,8 +469,8 @@
     border-color: transparent #cacbd0 #cacbd0 transparent;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
-    margin-left: 6px;
-    margin-top: 8px;
+    margin-left: 5px;
+    margin-top: 7px;
     position: relative; }
     .arrow__down:after {
       content: " ";
@@ -539,7 +540,7 @@
             box-sizing: border-box;
     margin: 3px; }
     .footer__network:hover {
-      border-color: #336bbc;
+      border: 2.6px solid #336bbc;
       color: #336bbc; }
   .footer__link {
     line-height: 36px;
