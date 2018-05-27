@@ -493,6 +493,7 @@
   font-weight: medium; }
 
 .add-inf__textarea {
+  padding: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   resize: none;
