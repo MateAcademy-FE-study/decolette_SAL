@@ -770,7 +770,7 @@
   margin-right: 10px;
   display: inline-block; }
 
-.selectric-items li::before:hover {
+.selectric-items li:hover::before {
   border: 2px solid #c4045f; }
 
 .selectric-label {
