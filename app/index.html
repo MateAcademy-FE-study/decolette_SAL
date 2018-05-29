@@ -233,14 +233,14 @@
                                     </div>
                                     <select size="1" name="interest" id="interest" class="select__menu">
                                         <option value="0" selected disabled="disabled" hidden="hidden">меня интересует</option>
-                                        <option value="1" data-circle="○"> Наведение порядка в делах</option>
-                                        <option value="2" data-circle="○">
+                                        <option value="1" > Наведение порядка в делах</option>
+                                        <option value="2" >
                                             Правовое сопровождение деятельности
                                         </option>
-                                        <option value="3" data-circle="○">
+                                        <option value="3">
                                             Оптимизация договорных отношений
                                         </option>
-                                        <option value="4" data-circle="○">
+                                        <option value="4">
                                             Разработка договоров
                                         </option>
                                     </select>
@@ -295,10 +295,13 @@
     <script>
         $(document).ready(function () {
             $('.select__menu').selectric({
-                
+               disableOnMobile: false,
+               nativeOnMobile: false 
             });
         });
-
+        $('.arrow').click(function(){
+            $('.selectric').click();
+        });
 
         // Tatsiak's scripts are bellow.
         const services = document.querySelectorAll('.service');
