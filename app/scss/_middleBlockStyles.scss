@@ -11,7 +11,7 @@ $grey-text: #c9cacf;
   .service {
     display: inline-block;
     min-height: 200px;
-    width: 500px;
+    max-width: 500px;
     margin: 30px;
     .service__logo {
       display: inline-block;
@@ -23,12 +23,12 @@ $grey-text: #c9cacf;
       margin-bottom: -15px;
       margin-top: 15px;
       padding-top: 10px;
-      color:#3e4052;
+      color: #3e4052;
     }
 
     .service__logo_svg {
-      max-width: 100%;
-      max-height: 100%;
+      width: 100%;
+      height: 100%;
     }
 
     .service__details {
@@ -38,32 +38,33 @@ $grey-text: #c9cacf;
       .details__top {
         display: flex;
         justify-content: space-between;
-        width: 100%;
         .service__info {
-          display: inline-block;
-          font-family: "Times New Roman", Times, serif;
-          border-radius: 50%;
-          width: 20px;
-          height: 20px;
-          border: 2px solid $violet-color;
-          text-align: center;
-          line-height: 20px;
-          margin-top: -5px;
+          position: relative;
+          &::after {
+            content: 'i';
+            display: block;
+            font-family: "Times New Roman", Times, serif;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            border: 2px solid $violet-color;
+            text-align: center;
+            margin: 5px;
+          }
         }
 
         .service__title {
-          color:#3c3f46;
+          color: #3c3f46;
           font-family: GothamProBold;
           display: inline-block;
           font-weight: 900;
-          width: 400px;
           font-size: 15px;
           line-height: 20px;
           text-transform: uppercase;
         }
       }
       .service__list {
-        color:#3e4052;
+        color: #3e4052;
         li {
           list-style-image: url("../img/li_icon.png");
           margin-left: -25px;
@@ -120,13 +121,13 @@ $grey-text: #c9cacf;
         margin-bottom: 30px;
         margin-left: 0;
         font-size: 17px;
-        line-height:20px;
-        color:#3c3f46;
-        overflow:hidden;
+        line-height: 20px;
+        color: #3c3f46;
+        overflow: hidden;
       }
       .author {
-        text-decoration:none;
-        color:#3c3f46;
+        text-decoration: none;
+        color: #3c3f46;
         .author__avatar {
           width: 35px;
           height: 35px;
@@ -138,8 +139,8 @@ $grey-text: #c9cacf;
         }
         .author__name {
           margin-top: 10px;
-          font-size:13px;
-          line-height:20px;
+          font-size: 13px;
+          line-height: 20px;
         }
         .author__title {
           line-height: 30px;
@@ -151,12 +152,11 @@ $grey-text: #c9cacf;
           }
         }
         &:hover {
-          cursor:pointer;
+          cursor: pointer;
           .author__name {
             color: $violet-color;
-            font-weight:bold;
+            font-weight: bold;
           }
-
         }
       }
     }
@@ -164,9 +164,9 @@ $grey-text: #c9cacf;
 }
 
 .loadmore {
-  text-decoration:none;
-  display:block;
-  color:#434343;
+  text-decoration: none;
+  display: block;
+  color: #434343;
   text-align: center;
   margin-top: 25px;
   font-family: GothamProBold;
@@ -182,7 +182,7 @@ $grey-text: #c9cacf;
     vertical-align: middle;
     margin-right: 15px;
   }
-  &:hover{
+  &:hover {
     color: $violet-color;
   }
 }
