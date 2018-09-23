@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Docollete</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <title>Decollete</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/jquery.selectric.js"></script>
-
+   
 </head>
 
 
@@ -26,21 +28,26 @@
                     <div class="welcomeline__nav">
                         <ul class="list">
                             <li class="list__element">
-                                <a href="">услуги и цены</a>
+                                <a href="#prices">услуги и цены</a>
                             </li>
                             <li class="list__element">
-                                <a href="">отзывы</a>
+                                <a href="#feedbacks">отзывы</a>
                             </li>
                             <li class="list__element">
                                 <a href="">контакты</a>
                             </li>
                         </ul>
+                        <div class="welcomeline__burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div> 
                         <select size="1" class="welcomeline__language">
                             <option>UA</option>
                             <option>HEB</option>
                             <option>DEU</option>
                             <option>ENG</option>
-                        </select>
+                        </select>   
                     </div>
                 </header>
 
@@ -51,12 +58,11 @@
 
                         <p class="text">Зачастую интернет-проекты, разработчики, маркетологи, дизайнеры, стартаперы и другие IT-специалисты
                             не уделяют должного внимания правовым аспектам своей деятельности.</p>
-                        <p class="text">Но
-                            <b>документы должны быть в порядке</b>, и мы в этом поможем.</p>
+                        <p class="text">Но<b> документы должны быть в порядке</b>, и мы в этом поможем.</p>
 
                         <div class="downloadinfo">
                             <span class="downloadinfo__img"></span>
-                            <a href="">услуги и цены</a>
+                            <a href="#prices">услуги и цены</a>
                         </div>
                     </div>
                     <a href="">
@@ -65,7 +71,10 @@
                 </div>
            </div>  
         </section>
-        <section class=prices>
+        <section class=prices id="prices">
+            <div class="scrollToTop"> <!-- onclick="window.scrollTo(0, 0);"-->
+                <div></div>
+            </div>
             <div class="container">
                 <h2 class="section__title">услуги и цены </h2>
                 <p class="description">
@@ -143,7 +152,7 @@
                 </div>
             </div>
         </section>
-        <section class=feedbacks>
+        <section class=feedbacks id="feedbacks">
             <div class="container">
                 <h2 class="section__title">отзывы</h2>
                 <p class="description">
@@ -255,7 +264,7 @@
                             <textarea class="add-inf__textarea" name="addinf" placeholder="Введите текст.."></textarea>
                         </div>
                     </div>
-                    <button type="submit" class="request__button button">отправить</button>
+                    <button type="submit" class="button">отправить</button>
                   
                 </form>
             </div>
@@ -294,16 +303,31 @@
             <!--© -->
         </footer>
     </div>
+    <div class="modal">
+        <div class="modal__btn"></div>
+    </div>
+    <script src="js/scripts.js"></script>
     <script>
         $(document).ready(function () {
             $('.select__menu').selectric({
                disableOnMobile: false,
                nativeOnMobile: false 
             });
+
+
+        $('.welcomeline__language').selectric({
+            disableOnMobile: false,
+            nativeOnMobile: false
         });
-        $('.arrow').click(function(){
+
+        $('.welcomeline__nav .selectric-items').addClass('animated slideInDown');
+
+         $('.arrow').click(function(){
             $('.selectric').click();
         });
+
+     });
+       
 
         // Tatsiak's scripts are bellow.
         const services = document.querySelectorAll('.service');
