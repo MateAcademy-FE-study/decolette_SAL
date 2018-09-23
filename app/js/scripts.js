@@ -6,6 +6,7 @@ window.onload = function() {
 	let moveTop = document.querySelector('.scrollToTop');
 
 
+	// modal menu for mobiles
 	menu.addEventListener('click', function opening (){
 		const nav = document.querySelector('.list');
 
@@ -26,16 +27,11 @@ window.onload = function() {
 		}
 	}
 
-//	function positionOfMoveTop () {
-		if (moveTop.getBoundingClientRect().top < window.scrollY) moveTop.classList.add('active');
-		if (window.innerWidth >= 1200) {
-			moveTop.style.right = `(${window.innerWidth} - 1200px)/2 + 50px`;
-		}
-//	}
-
+	//appearence & behavier of button to move to top
+	if (moveTop.getBoundingClientRect().top < window.scrollY) moveTop.classList.add('active');
+	
 	window.addEventListener('scroll', checkPosition);
 	
-
 	function checkPosition(e) {
 		if (window.scrollY > window.innerHeight/2) {
 			moveTop.classList.add('active');
