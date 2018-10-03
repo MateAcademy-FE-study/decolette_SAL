@@ -19,12 +19,18 @@ gulp.task('styles', function(){
 
 gulp.task('watch', function(){
     gulp.watch('app/scss/**/*.scss', ['styles']); 
-    gulp.watch('app/**/*.html', ['html']); 
+    gulp.watch('app/**/*.html', ['html']);
+    gulp.watch('app/js/**/*.js', ['scripts']); 
   })
 
 gulp.task('html', function(){
     return gulp.src('app/*.html')
       .pipe(gulp.dest('dist'))
+  });
+
+gulp.task('css', function(){
+    return gulp.src('app/css/*.css')
+      .pipe(gulp.dest('dist/css'))
   });
 
 gulp.task('images', function(){
@@ -39,7 +45,7 @@ gulp.task('fonts', function(){
 })
 
 gulp.task('scripts', function(){
-    return gulp.src('app/js/**')
+    return gulp.src('app/js/**/*.js')
         .pipe(gulp.dest('dist/js'))
 })
 
@@ -48,7 +54,7 @@ gulp.task('clean:dist', function(){
 })
 
 gulp.task('build', function(callback){
-    runSequence('clean:dist', ['styles', 'html', 'images', 'fonts', 'scripts'])
+    runSequence('clean:dist', ['styles', 'html', 'images', 'fonts', 'scripts', 'css'])
 })
 
 gulp.task('default', ['build', 'watch'])

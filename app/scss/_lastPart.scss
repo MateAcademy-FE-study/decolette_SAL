@@ -7,7 +7,12 @@
 }
 .request {
 	padding-bottom: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	&__form {
+		box-sizing: border-box;
+		width:100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
@@ -17,16 +22,13 @@
   		width: 47.5%;
  		padding-bottom: 160px;
   		position: relative;
+  	
   	}
   	&__add-inf {
 		width: 47.5%;
 		margin-top:11px;
 	}
-  	&__button {
-	  	position: absolute;
-	  	left: 50%;
-	  	transform: translateX(-50%);
-	}
+
 }
 
 .client {
@@ -147,13 +149,14 @@
 .footer {
   	text-align: center;
   	color: #3c3f45;
-  	&__contacts 
+  	&__contacts {
   		h3 {
 			text-transform: uppercase;
 		}
 		p {
 			line-height: 30px;
 		}
+	}
 	&__social {
 		display: flex;
 		justify-content: center;
@@ -221,6 +224,13 @@
 			outline: none;
 			width: 100%;
 			height: 80px;
+		}
+	}
+}
+@media (max-width: 330px) {
+	.client {
+		&__item {
+			padding-top: 15px;
 		}
 	}
 }
