@@ -541,9 +541,6 @@
   .loadmore:hover {
     color: #a70c5d; }
 
-.request-service {
-  max-height: 100vh; }
-
 .container-min {
   max-width: 800px;
   margin: 0 auto; }
@@ -559,7 +556,8 @@
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  max-height: 100vh; }
   .request__form {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -747,7 +745,7 @@
     margin: 0 auto;
     width: 90%; }
   .request {
-    padding-bottom: 50px; }
+    padding-bottom: 40px; }
     .request__form {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -778,6 +776,20 @@
 @media (max-width: 330px) {
   .client__item {
     padding-top: 15px; } }
+
+@media (max-height: 495px) {
+  .request__inf {
+    padding-bottom: 30px; }
+  .request__add-inf p {
+    margin-bottom: 15px; }
+    .request__add-inf p:hover {
+      cursor: pointer; }
+  .request__add-inf textarea {
+    display: none; } }
+
+@media (max-height: 350px) {
+  .request {
+    max-height: none; } }
 
 .selectric-wrapper {
   position: relative; }

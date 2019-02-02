@@ -3,8 +3,8 @@
 window.onload = function() {
 	const menu = document.querySelector('.welcomeline__burger');
 	const modal = document.querySelector('.modal');
+	const addInfo = document.querySelector('.add-inf p');
 	let moveTop = document.querySelector('.scrollToTop');
-
 
 	// modal menu for mobiles
 	menu.addEventListener('click', function opening (){
@@ -31,7 +31,7 @@ window.onload = function() {
 	if (moveTop.getBoundingClientRect().top < window.scrollY) moveTop.classList.add('active');
 	
 	window.addEventListener('scroll', checkPosition);
-	
+
 	function checkPosition(e) {
 		if (window.scrollY > window.innerHeight/2) {
 			moveTop.classList.add('active');
@@ -44,6 +44,20 @@ window.onload = function() {
 		}
 	}
 
+	
+	addInfo.addEventListener('click', showTextarea);
+
 }
 
 
+
+function showTextarea(e) {
+	let textarea = e.target.nextElementSibling;
+
+	if (textarea.style.display == 'block') {
+		textarea.style.display = 'none';
+	}else {
+		textarea.style.display = 'block';
+	}
+
+}
