@@ -2,59 +2,57 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     imagemin = require('gulp-imagemin'),
     del = require('del'),
-    runSequence = require('run-sequence'),
+   // runSequence = require('run-sequence'),
     rename = require('gulp-rename'),
     cssnano = require('gulp-cssnano'),
     autoprefixer = require('gulp-autoprefixer');
 
-gulp.task('styles', function(){
+function styles(){
     return gulp.src('app/scss/style.scss')
         .pipe(sass())
         .pipe(autoprefixer('last 2 version'))
         .pipe(gulp.dest('dist/css'))
         .pipe(rename({suffix: '.min'}))
         .pipe(cssnano())
-        .pipe(gulp.dest('dist/css'))
-});
+        .pipe(gulp.dest('dist/css'));
+};
 
-gulp.task('watch', function(){
-    gulp.watch('app/scss/**/*.scss', ['styles']); 
-    gulp.watch('app/**/*.html', ['html']);
-    gulp.watch('app/js/**/*.js', ['scripts']); 
-  })
+function watch() {
+    gulp.watch('app/scss/**/*.scss', styles); 
+    gulp.watch('app/**/*.html', html);
+    gulp.watch('app/js/**/*.js', scripts); 
+  }
 
-gulp.task('html', function(){
+function html() {
     return gulp.src('app/*.html')
-      .pipe(gulp.dest('dist'))
-  });
+      .pipe(gulp.dest('dist'));
+  };
 
-gulp.task('css', function(){
+function css() {
     return gulp.src('app/css/*.css')
-      .pipe(gulp.dest('dist/css'))
-  });
+      .pipe(gulp.dest('dist/css'));
+  };
 
-gulp.task('images', function(){
+function images() {
     return gulp.src('app/images/**/*.+(png|jpg|gif|svg)')
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/img'))
-})
+        .pipe(gulp.dest('dist/img'));
+};
 
-gulp.task('fonts', function(){
+function fonts() {
     return gulp.src('app/fonts/**/*')
-        .pipe(gulp.dest('dist/fonts'))
-})
+        .pipe(gulp.dest('dist/fonts'));
+}
 
-gulp.task('scripts', function(){
+function scripts() {
     return gulp.src('app/js/**/*.js')
-        .pipe(gulp.dest('dist/js'))
-})
+        .pipe(gulp.dest('dist/js'));
+}
 
-gulp.task('clean:dist', function(){
-    return del.sync('dist');
-})
+function clean() {
+    return del(['dist']);
+}
 
-gulp.task('build', function(callback){
-    runSequence('clean:dist', ['styles', 'html', 'images', 'fonts', 'scripts', 'css'])
-})
+var build = gulp.series(clean, gulp.parallel(styles, html, images, fonts, scripts, css));
 
-gulp.task('default', ['build', 'watch'])
+gulp.task('default', gulp.series(build, watch));
