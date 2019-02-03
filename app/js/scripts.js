@@ -45,13 +45,12 @@ window.onload = function() {
 	}
 
 	
-	addInfo.addEventListener('click', showTextarea);
+	addInfo.addEventListener('click', toggleTextarea);
 
 }
 
 
-
-function showTextarea(e) {
+function toggleTextarea(e) {
 	let textarea = e.target.nextElementSibling;
 
 	if (textarea.style.display == 'block') {
